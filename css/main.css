@@ -1,9 +1,18 @@
+body{
+  padding-bottom: 40px; /*Espaçamento para o friend list button*/
+}
+
 .icon {
   padding-right: 0.5em;
 }
 
 .color-yellow {
   color: yellow;
+}
+
+/* sign up modal style*/
+.signup-modal-content{
+  height: 430px;
 }
 
 /* friend-list style*/
