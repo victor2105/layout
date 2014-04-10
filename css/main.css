@@ -6,6 +6,30 @@
   color: yellow;
 }
 
+/* friend-list style*/
+.friend-list{
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  list-style: none;
+  z-index: 10;
+}
+.friend-list-button{
+  width: 150px;
+  border-radius: 4px 4px 0 0;
+}
+.friend-list-dropdown{
+  bottom: 100%;
+  top: auto;
+  left: auto;
+  right: 0;
+
+  width: 250px;
+  height: 450px;
+  margin: 0 0;
+  padding: 0 0;
+}
+
 .color-green {
   color: #00AA00;
 }
