@@ -76,3 +76,9 @@ body{
 .login-popup .form-group {
     margin-bottom: 0;
 }
+
+/* tabela de itens */
+#items-table .item {
+  padding: 1em 0;
+  vertical-align: middle;
+}
