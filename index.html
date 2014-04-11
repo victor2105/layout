@@ -14,6 +14,7 @@
     <link href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/slate/bootstrap.min.css" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/chat.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
@@ -77,6 +78,47 @@
             </a>
         </div>
     </div>
+
+    <div class="chat-box">
+        <input type="checkbox" />
+        <label data-expanded="Close Chatbox" data-collapsed="Open Chatbox"></label>
+        <div class="chat-box-content">
+
+            <div id="chatScreen" class="well well-lg chat-screen" >
+
+            </div>
+
+            <div class="form-group"> 
+                <label class="control-label">Input addons</label>
+                <div class="input-group">
+                    <input onkeydown="buttonEnterPressed()" id="textarea" type="text" class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" onclick="message()">Button</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        function message()
+        {
+            document.getElementById("chatScreen").innerHTML += "<br>" +  document.getElementById("textarea").value;
+            document.getElementById("textarea").value = "";
+            document.getElementById("chatScreen").scrollTop = document.getElementById("chatScreen").scrollHeight;
+        }
+
+        function buttonEnterPressed(){
+            if (event.keyCode == 13) { 
+                this.message(); 
+                return false; 
+            }
+        }
+    </script>
+
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
