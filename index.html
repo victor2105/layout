@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/chat.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -67,7 +68,7 @@
 
         <div class="list-group">
 
-            <a href="#" class="list-group-item">
+            <a id="a1" href="#" class="list-group-item">
                 Mario da burrinha <span class="fa icon fa-user pull-right color-green"></span>
             </a>
             <a href="#" class="list-group-item">
@@ -76,10 +77,11 @@
             <a href="#" class="list-group-item">
                 ninguem <span class="fa icon fa-user pull-right"></span>
             </a>
+
         </div>
     </div>
 
-    <div class="chat-box">
+    <div id="box" class="chat-box">
         <input type="checkbox" />
         <label data-expanded="Close Chatbox" data-collapsed="Open Chatbox"></label>
         <div class="chat-box-content">
@@ -102,6 +104,12 @@
     </div>
 
     <script>
+
+        $("#box").hide();
+
+        $("#a1").click(function(){
+            $("#box").show();
+        });
 
         function message()
         {
