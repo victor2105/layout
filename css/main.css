@@ -39,8 +39,22 @@ body{
   padding: 0 0;
 }
 
+.no-padding-right{
+  padding-right: 0;
+}
+.no-margin{
+    margin: 0 0;
+}
 .color-green {
   color: #00AA00;
+}
+
+/* aparencia do formulario da pagina de registro*/
+.signup-page-button{
+  width: 100%;
+}
+.signup-page-form-hero{
+  padding: 20px 15px;
 }
 
 /* aparencia do dropdown de login */
