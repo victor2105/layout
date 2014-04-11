@@ -9,4 +9,5 @@ var barChartData = {
     ]
 }
 
-var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Bar(barChartData);
+var myLine = new Chart(document.getElementById("canvas_least").getContext("2d")).Bar(barChartData);
+var myLine = new Chart(document.getElementById("canvas_most").getContext("2d")).Bar(barChartData);
