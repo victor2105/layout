@@ -15,7 +15,7 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" >
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>    
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -74,11 +74,65 @@
           </p>
 
         <p class="list-group-item-text">
-            <span class="fa icon far-left fa-play-circle-o "></span> <a href="#" >Jogar</a>
-            <span class="fa icon fa-comments "></span><a href="#" >Comentários</a>
-            <span class="fa icon fa-pencil "></span><a href="#" >Escrever Review</a>
+          <span class="fa icon far-left fa-play-circle-o "></span> <a href="#">Jogar</a>
+          <span class="hidden-xs">
+            <span class="fa icon fa-comments "></span><a href="#">Comentários</a>
+            <span class="fa icon fa-pencil "></span><a href="#">Escrever Review</a>
+          </span>
+          
+          <span class="fa icon fa-trophy"></span><a href="#" data-toggle="collapse" data-target="#achievements-list">Conquistas</a>
+          
         </p>
+
+      <div id="achievements-list" class="achievements-list collapse">
+        <div class="progress">
+          <div class="progress-bar" style="width: 33%;"></div>
+          <span>1 de 3 concluídos</span>
+        </div>
+
+       <div class="panel panel-default achievement done">
+          <div class="panel-body">
+            <img src="http://www.opresente.com.br/media/webmedia/files/lek_1.jpg" />
+            <div class="achievement-text">
+              <h4>
+                No passinho do volante
+              </h4>
+              <p>
+                Quero ver o baile todo
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default achievement not-done">
+           <div class="panel-body">
+             <img src="http://www.opresente.com.br/media/webmedia/files/lek_1.jpg" />
+             <div class="achievement-text">
+               <h4>
+                 No passinho do volante
+               </h4>
+               <p>
+                 Quero ver o baile todo
+               </p>
+             </div>
+           </div>
+         </div>
+
+         <div class="panel panel-default achievement not-done">
+            <div class="panel-body">
+              <img src="http://www.opresente.com.br/media/webmedia/files/lek_1.jpg" />
+              <div class="achievement-text">
+                <h4>
+                  No passinho do volante
+                </h4>
+                <p>
+                  Quero ver o baile todo
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
+    </div>
     </div>
 
     <div class="panel panel-default games-panel">
@@ -101,15 +155,19 @@
           </p>
 
         <p class="list-group-item-text">
-            <span class="fa icon far-left fa-play-circle-o "></span> <a href="#" >Jogar</a>
-            <span class="fa icon fa-comments "></span><a href="#" >Comentários</a>
-            <span class="fa icon fa-pencil "></span><a href="#" >Escrever Review</a>
+          <span class="fa icon far-left fa-play-circle-o "></span> <a href="#" >Jogar</a>
+          <span class="fa icon fa-comments "></span><a href="#" >Comentários</a>
+          <span class="fa icon fa-pencil "></span><a href="#" >Escrever Review</a>
+          <span class="hidden-xs">
+            <span class="fa icon fa-trophy "></span><a href="#" >Minhas conquistas</a>
+          </span>
         </p>
       </div>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>

@@ -126,7 +126,67 @@ border-radius: 5px;
 }
 
 .games-panel{
-  line-height:1.4em;
+  line-height: 1.4em;
+}
+
+.achievements-list {
+  margin-top: 2em;
+}
+
+.achievements-list .progress {
+  position: relative;
+}
+
+.achievements-list .progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: white;
+    line-height: 20px;
+    padding-left: 1em;
+ }
+
+.achievement {
+  margin-top: 1em;
+  height: 66px !important;
+  padding: 0;
+}
+
+.achievement.done {
+  background: #62C462;
+}
+
+.achievement.not-done {
+  background: #EE5F5B;
+}
+
+.achievement .panel-body {
+  margin: 0;
+  padding: 0;
+}
+
+.achievement .achievement-text {
+  margin-left: 78px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.achievement h4 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.achievement p {
+  margin-top: 0;
+}
+
+.achievement img {
+  width: 64px;
+  height: 64px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px 0 0 5px;
 }
 
 /* tabela de itens */
