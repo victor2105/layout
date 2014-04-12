@@ -35,8 +35,9 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="#">Games</a></li>
-                <li><a href="games.html">News</a></li>
+                <li><a href="#">News</a></li>
                 <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#">About</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -44,71 +45,7 @@
                 <li><a href="#"><span class="fa icon fa-sign-out"></span>Sign out</a></li>
             </ul>
         </div>
-
-
-<!-- Sign Up Modal -->
-<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content signup-modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
-      </div>
-      <div class="modal-body signup-modal-body">
-        <form class="form-horizontal">
-          <fieldset class="login-popup">
-            <div class="form-group">
-              <div class="col-xs-12">
-                <input class="form-control" type="text" for="firstName" placeholder="First name">
-                <input class="form-control" type="text" for="lastName" placeholder="Last name">
-                <input class="form-control" type="date" for="birthDate" placeholder="Birth date">
-                <input class="form-control" type="email" for="email" placeholder="Email">
-                <input class="form-control" type="password" for="password" placeholder="Password">
-                <input class="form-control" type="password" for="password_confirmation" placeholder="Confirm password">
-              </div>
-            </div>
-          </fieldset>
-          <input type="submit" class="btn btn-success col-xs-12" value="Sign Up">
-        </form>
-      </div>
     </div>
-  </div>
-</div>
-<!-- End Sign Up Modal -->
-
-
-
-<!-- Add your site or application content here -->
-<div class="navbar navbar-default">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-   <a class="navbar-brand" href="index.html">Istim Games &trade;</a>
-  </div>
-  <div class="navbar-collapse collapse navbar-responsive-collapse">
-    <ul class="nav navbar-nav">
-
-      <li><a href="#">Games</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="statistics.html">Statistics</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in <b class="caret"></b></a>
-        <ul class="dropdown-menu login-dropdown">
-          <li>
-            <form class="form-horizontal">
-              <fieldset class="login-popup">
-                <legend>Login</legend>
-                <div class="form-group">
-                  <div class="col-xs-12">
-                    <input class="form-control" type="email" for="email" placeholder="email">
-                    <input class="form-control" type="password" for="password" placeholder="password">
-                    <input type="submit" class="btn btn-success col-xs-12" value="Sign In">
 
     <div class="col-xs-3">
         <div class="list-group">
@@ -128,6 +65,8 @@
             </a>
         </div>
 
+      
+      
         <div class="list-group">
 
             <a href="#" class="list-group-item">
@@ -141,6 +80,55 @@
             </a>
         </div>
     </div>
+  
+    <div class="col-xs-6">
+      <div class="panel panel-default ">
+      <div class="panel-heading">Review</div>
+      <div class="panel-body">
+      <div ng-controller='reviewController'>
+          <table class="table table-bordered">
+              <thead>
+                  <tr>
+                      <th>Nome do Jogo</th>
+                      <th>Média</th>
+                      <th>Review</th>
+                      <th>Comentários</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Mario da burrinha</td>
+                      <td>10.0</td>
+                      <td>100.000.000</td>
+                      
+                      <td>
+                          <button type="button" class="btn btn-default">Visualizar</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Batman</td>
+                      <td>10.0</td>
+                      <td>50.345.30</td>
+                      <td>
+                          <button type="button" class="btn btn-default">Visualizar</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Bomberman</td>
+                      <td>10.0</td>
+                      <td>45.454.98</td>
+                      <td>
+                          <button type="button" class="btn btn-default">Visualizar</button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      </div>
+      </div>
+    </div>
+  
+  
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
