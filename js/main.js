@@ -1,5 +1,5 @@
 var barChartData = {
-    labels : ["League of Legends","Dota","Angry Birds","Flapy Bird","Spirit Stones","Dark Sols","Monster Hunter"],
+    labels : ["League of Legends","Dota","Angry Birds","Flappy Bird","Spirit of Stones","Dark Souls","Monster Hunter"],
     datasets : [
         {
             fillColor : "rgba(151,187,205,0.8)",
