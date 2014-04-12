@@ -184,7 +184,29 @@ border-radius: 5px;
   border-radius: 5px 0 0 5px;
 }
 
-.games-dash .list-group-item {
+.game-dash {
+  margin-bottom: 2em;
+}
+
+.game-dash p {
+  margin: 0;
+  padding: 0;
+}
+
+.game-dash img {
+  display: inline;
+  float: left;
+  line-height: 62px;
+  margin-right: 1em;
+}
+
+.game-dash .actions {
+  margin-left: 46px;
+}
+
+.game-dash .actions a {
+  display: inline-block;
+  padding-right: 1em;
 }
 
 /* tabela de itens */
