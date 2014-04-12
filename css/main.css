@@ -227,3 +227,15 @@ border-radius: 5px;
 p.game-description{
   font-size: 12px;
 }
+
+.previews-container{
+  width: 600px;
+  height: 100px;
+}
+
+.game-preview-thumbnail{
+  width: 84px;
+  height: 84px;
+  padding: 0;
+  margin-right: 1em;
+}
