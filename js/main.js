@@ -11,3 +11,17 @@ var barChartData = {
 
 var myLine = new Chart(document.getElementById("canvas_least").getContext("2d")).Bar(barChartData);
 var myLine = new Chart(document.getElementById("canvas_most").getContext("2d")).Bar(barChartData);
+
+$('#items-table .item').each(function() {
+  var name = $(this).find('img').data('name');
+  var description = $(this).find('img').data('description');
+  var value = $(this).find('img').data('value');
+
+  $(this).find('div').popover({
+    title: '<strong>' + name + '</strong>',
+    html: true,
+    trigger: 'hover',
+    placement: 'bottom',
+    content: description + '<br><strong>Value:</strong> <span class="color-yellow"><i class="fa fa-bitcoin"></i> ' + value + '</span>'
+  });
+});
