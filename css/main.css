@@ -227,3 +227,14 @@ border-radius: 5px;
 p.game-description{
   font-size: 12px;
 }
+
+.game-inline{
+  display: inline;
+  padding-top:1em;
+}
+
+.price{
+  color: #0ba854;
+  font-weight: bold;
+  font-size: 1.5em;
+}
