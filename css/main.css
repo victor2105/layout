@@ -184,6 +184,9 @@ border-radius: 5px;
   border-radius: 5px 0 0 5px;
 }
 
+.games-dash .list-group-item {
+}
+
 /* tabela de itens */
 #items-table .item {
   padding: 1em 0;
