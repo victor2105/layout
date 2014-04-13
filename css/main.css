@@ -294,6 +294,10 @@ p.game-description{
   font-size: 1.5em;
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+
 .login-popup .btn-success {
   background-image: linear-gradient(#2f7d2f, #379337 40%, #3da23d);
   background-repeat: no-repeat;
