@@ -146,6 +146,12 @@ border-radius: 5px;
   color: #837f7f;
 }
 
+.game-list-stars-dourada{
+  display: inline;
+  color: #F7FE2E;
+  padding: 0.6em;
+}
+
 .game-list .far-left{
   margin-left: 0;
 }
@@ -297,6 +303,7 @@ p.game-description{
 .col-centered{
     float: none;
     margin: 0 auto;
+}
 
 .login-popup .btn-success {
   background-image: linear-gradient(#2f7d2f, #379337 40%, #3da23d);
@@ -306,3 +313,12 @@ p.game-description{
 #items-table .item > div {
   cursor: pointer;
 }
+    
+.imgGuide {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 100px;
+    height: 100px;
+}
+
+
