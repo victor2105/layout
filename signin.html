@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/slate/bootstrap.min.css" rel="stylesheet">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css" >
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content signup-modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+            </div>
+            <div class="modal-body signup-modal-body">
+                <form class="form-horizontal">
+                    <fieldset class="login-popup">
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input class="form-control" type="text" for="firstName" placeholder="First name">
+                                <input class="form-control" type="text" for="lastName" placeholder="Last name">
+                                <input class="form-control" type="date" for="birthDate" placeholder="Birth date">
+                                <input class="form-control" type="email" for="email" placeholder="Email">
+                                <input class="form-control" type="password" for="password" placeholder="Password">
+                                <input class="form-control" type="password" for="password_confirmation" placeholder="Confirm password">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input type="submit" class="btn btn-success col-xs-12" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Sign Up Modal -->
+
+
+
+<!-- Navbar -->
+<div class="navbar navbar-default">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">Istim</a>
+	</div>
+	<div class="navbar-collapse collapse navbar-responsive-collapse">
+		<ul class="nav navbar-nav">
+
+			<li><a href="games.html">Meus Games</a></li>
+			<li><a href="buyGames.html">Comprar Games</a></li></a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in <b class="caret"></b></a>
+                <ul class="dropdown-menu login-dropdown">
+                    <li>
+                        <form class="form-horizontal">
+                            <fieldset class="login-popup">
+                                <legend>Login</legend>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <input class="form-control" type="email" for="email" placeholder="email">
+                                        <input class="form-control" type="password" for="password" placeholder="password">
+                                        <input type="submit" class="btn btn-success col-xs-12" value="Sign In">
+
+                                        <span class="pull-right">Don't have an account?</span>
+                                        <button data-toggle="modal" data-target="#signup-modal" id="signup-modal-button" type="button" class="btn btn-default col-xs-4 pull-right">Sign up</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+		</ul>
+	</div>
+</div>
+<!-- end Navbar -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <div class="jumbotron signup-page-form-hero">
+                <form class="form-horizontal">
+                    <fieldset class="login-popup">
+                        <div class="col-xs-12">
+                            <legend>
+                                <div class="alert alert-warning text-center">
+                                    <h2 class="no-margin">
+                                        Istim Games&#8482
+                                    </h2>
+                                </div>
+                            </legend>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <input class="form-control" type="email" for="email" placeholder="email">
+                                        <input class="form-control" type="password" for="password" placeholder="password">
+                                        
+
+                                        <span class="pull-left">Don't have an account?</span>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xs-6 pull-right">
+                                    <input type="submit" class="btn btn-success col-xs-12" value="Sign In">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='//www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+</body>
+</html>
