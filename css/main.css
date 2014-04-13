@@ -241,6 +241,6 @@ p.game-description{
   font-size: 1.5em;
 }
 
-#items-table .item img {
+#items-table .item > div {
   cursor: pointer;
 }

@@ -27,4 +27,8 @@ $('#items-table .item').each(function() {
     placement: 'bottom',
     content: description + '<br><strong>Value:</strong> <span class="color-yellow"><i class="fa fa-bitcoin"></i> ' + value + '</span>'
   });
+
+  $(this).find('.item-tip').click(function() {
+    $('#modal-details').modal('show');
+  });
 });
