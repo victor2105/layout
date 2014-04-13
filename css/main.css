@@ -240,3 +240,8 @@ p.game-description{
   font-weight: bold;
   font-size: 1.5em;
 }
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
