@@ -38,7 +38,15 @@
                 <li><a href="buyGames.html">Comprar Games</a></li></a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="statistics.html">Statistics</a></li>
-                <li><a href="transfer.html">Tranferências</a></li>
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gerenciamento da Conta <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="transfer">Transferência de Cash</a></li>
+                          <li><a href="#">Recarga de Cash</a></li>
+                          <li><a href="#">Histórico de Transferência</a></li>
+                          <li><a href="#">Histórico de Recarga</a></li>
+                        </ul>
+                      </li>
                 <li><a href="#">About</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -84,7 +92,7 @@
               </div>
               <div class="col-xs-8">
                 <div class="list-group pull-right">
-                  <h4 class="list-group-item-heading">Nome do Jogador Origem</h4>
+                  <h4 class="list-group-item-heading">Nome do Jogador Destino</h4>
                   <p class="list-group-item-text">Status: <span class="fa icon fa-user color-green"></span></p>
                   <p class="list-group-item-text">
                     Ranking: #100
@@ -96,31 +104,41 @@
         
         <div class="row">
           <div class="col-md-2 col-centered">
-            <a href="#" data-toggle="collapse" data-target="#achievements-list">Iniciar Transferência</a>
+            <a href="#" data-toggle="collapse" data-target="#transfer-form">Iniciar Transferência</a>
           </div>
         </div>
 
-        <div id="achievements-list" class="achievements-list collapse">
-          <div class="panel panel-default achievement not-done">
-            <div class="panel-body">
-              <img src="http://www.opresente.com.br/media/webmedia/files/lek_1.jpg" />
-              <div class="achievement-text">
-                <h4>
-                  Let's Lek
-                </h4>
-                <p>
-                  Lelek pela primeira vez
-                </p>
+        <div id="transfer-form" class="transfer-form collapse">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-lg-8 col-centered">
+                <form class="form-horizontal">
+                  <legend>Formulário de Transferência</legend>
+                  <fieldset>
+                    <div class="form-group col-lg-5">
+                      <label class="control-label">Valor</label>
+                      <div class="input-group">
+                        <span class="input-group-addon">R$</span>
+                        <input type="text" class="form-control" placeholder="00,00">
+                        <span class="input-group-btn">
+                          <button class="btn btn-success" type="button">Transferir</button>
+                        </span>
+                      </div>
+                    </div>  
+                  </fieldset>                                 
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>
