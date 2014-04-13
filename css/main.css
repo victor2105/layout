@@ -82,6 +82,26 @@ body{
   margin-bottom: .6em;
 }
 
+/* aparencia formulario do editProfile*/
+.form-profile{
+  border: 0;
+}
+.form-profile fieldset{
+  border: 0;
+}
+.form-profile button{
+  width: 100%;
+}
+.form-profile legend {
+    margin: .2em 0 .3em 0;
+}
+.form-profile input {
+  background: rgba(0, 0, 0, .15);
+  border: none;
+  color: #FFF;
+  margin-bottom: .6em;
+}
+
 .login-popup .form-group {
   margin-bottom: 0;
 }
