@@ -9,19 +9,26 @@ var barChartData = {
     ]
 }
 
-var myLine = new Chart(document.getElementById("canvas_least").getContext("2d")).Bar(barChartData);
-var myLine = new Chart(document.getElementById("canvas_most").getContext("2d")).Bar(barChartData);
+if (document.getElementById("canvas_least"))
+  var myLine = new Chart(document.getElementById("canvas_least").getContext("2d")).Bar(barChartData);
+if (document.getElementById("canvas_most"))
+  var myLine = new Chart(document.getElementById("canvas_most").getContext("2d")).Bar(barChartData);
 
 $('#items-table .item').each(function() {
   var name = $(this).find('img').data('name');
   var description = $(this).find('img').data('description');
   var value = $(this).find('img').data('value');
+  name += ($(this).hasClass('forsale')) ? ' <span class="badge">for sale</span>' : '';
 
-  $(this).find('div').popover({
+  $(this).find('.item-tip').popover({
     title: '<strong>' + name + '</strong>',
     html: true,
     trigger: 'hover',
     placement: 'bottom',
     content: description + '<br><strong>Value:</strong> <span class="color-yellow"><i class="fa fa-bitcoin"></i> ' + value + '</span>'
+  });
+
+  $(this).find('.item-tip').click(function() {
+    $('#modal-details').modal('show');
   });
 });
