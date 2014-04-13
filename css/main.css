@@ -80,6 +80,9 @@ body{
 .form-profile fieldset{
   border: 0;
 }
+.form-profile button{
+  width: 100%;
+}
 .form-profile legend {
     margin: .2em 0 .3em 0;
 }
