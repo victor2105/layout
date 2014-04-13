@@ -9,8 +9,10 @@ var barChartData = {
     ]
 }
 
-var myLine = new Chart(document.getElementById("canvas_least").getContext("2d")).Bar(barChartData);
-var myLine = new Chart(document.getElementById("canvas_most").getContext("2d")).Bar(barChartData);
+if (document.getElementById("canvas_least"))
+  var myLine = new Chart(document.getElementById("canvas_least").getContext("2d")).Bar(barChartData);
+if (document.getElementById("canvas_most"))
+  var myLine = new Chart(document.getElementById("canvas_most").getContext("2d")).Bar(barChartData);
 
 $('#items-table .item').each(function() {
   var name = $(this).find('img').data('name');
