@@ -42,8 +42,16 @@ body{
 .no-padding-right{
   padding-right: 0;
 }
+
+.no-padding-left {
+  padding-left: 0;
+}
 .no-margin{
     margin: 0 0;
+}
+
+.centralize-margin {
+  margin-top: 10%;
 }
 .color-green {
   color: #00AA00;
@@ -68,6 +76,26 @@ body{
     margin: .2em 0 .3em 0;
 }
 .login-popup input {
+  background: rgba(0, 0, 0, .15);
+  border: none;
+  color: #FFF;
+  margin-bottom: .6em;
+}
+
+/* aparencia formulario do editProfile*/
+.form-profile{
+  border: 0;
+}
+.form-profile fieldset{
+  border: 0;
+}
+.form-profile button{
+  width: 100%;
+}
+.form-profile legend {
+    margin: .2em 0 .3em 0;
+}
+.form-profile input {
   background: rgba(0, 0, 0, .15);
   border: none;
   color: #FFF;
@@ -186,6 +214,31 @@ border-radius: 5px;
   border-radius: 5px 0 0 5px;
 }
 
+.game-dash {
+  margin-bottom: 2em;
+}
+
+.game-dash p {
+  margin: 0;
+  padding: 0;
+}
+
+.game-dash img {
+  display: inline;
+  float: left;
+  line-height: 62px;
+  margin-right: 1em;
+}
+
+.game-dash .actions {
+  margin-left: 46px;
+}
+
+.game-dash .actions a {
+  display: inline-block;
+  padding-right: 1em;
+}
+
 /* tabela de itens */
 #items-table .item {
   padding: 1em 0;
@@ -244,4 +297,12 @@ p.game-description{
 .col-centered{
     float: none;
     margin: 0 auto;
+
+.login-popup .btn-success {
+  background-image: linear-gradient(#2f7d2f, #379337 40%, #3da23d);
+  background-repeat: no-repeat;
+}
+
+#items-table .item > div {
+  cursor: pointer;
 }
