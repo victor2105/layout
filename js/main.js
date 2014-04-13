@@ -18,8 +18,9 @@ $('#items-table .item').each(function() {
   var name = $(this).find('img').data('name');
   var description = $(this).find('img').data('description');
   var value = $(this).find('img').data('value');
+  name += ($(this).hasClass('forsale')) ? ' <span class="badge">for sale</span>' : '';
 
-  $(this).find('div').popover({
+  $(this).find('.item-tip').popover({
     title: '<strong>' + name + '</strong>',
     html: true,
     trigger: 'hover',

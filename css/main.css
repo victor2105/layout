@@ -240,3 +240,7 @@ p.game-description{
   font-weight: bold;
   font-size: 1.5em;
 }
+
+#items-table .item img {
+  cursor: pointer;
+}
