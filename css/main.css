@@ -49,6 +49,10 @@ body{
 .no-margin{
     margin: 0 0;
 }
+
+.centralize-margin {
+  margin-top: 10%;
+}
 .color-green {
   color: #00AA00;
 }
