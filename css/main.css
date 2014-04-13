@@ -139,6 +139,8 @@ border-radius: 5px;
     display: block;
     width: 100%;
     color: white;
+    line-height: 20px;
+    padding-left: 1em;
  }
 
 .achievement {
@@ -251,3 +253,13 @@ p.game-description{
   width: 300px;
 }
 
+.game-inline{
+  display: inline;
+  padding-top:1em;
+}
+
+.price{
+  color: #0ba854;
+  font-weight: bold;
+  font-size: 1.5em;
+}
