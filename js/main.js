@@ -18,7 +18,8 @@ $('#items-table .item').each(function() {
   var name = $(this).find('img').data('name');
   var description = $(this).find('img').data('description');
   var value = $(this).find('img').data('value');
-  name += ($(this).hasClass('forsale')) ? ' <span class="badge">for sale</span>' : '';
+  var qtd = ($(this).find('img').data('selling')) ? ' ' + $(this).find('img').data('selling') : '';
+  name += ($(this).hasClass('forsale')) ? ' <span class="badge">selling' + qtd + '</span>' : '';
 
   $(this).find('.item-tip').popover({
     title: '<strong>' + name + '</strong>',
