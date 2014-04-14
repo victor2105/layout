@@ -250,12 +250,12 @@ border-radius: 5px;
 }
 
 .leftcol {
-  margin-right: 20px;
-  width: 600px;
+  margin-right: 30px;
+  width: 650px;
 }
 
 .rightcol {
-  width: 300px;
+  width: 320px;
 }
 
 .game-thumbnail{
@@ -270,14 +270,14 @@ border-radius: 5px;
 }
 
 .game-image{
-  width: 290px;
+  width: 320px;
   height: 130px;
   float: left;
   padding: 0;
 }
 
 .game-preview{
-  width: 600px;
+  width: 650px;
   height: 400px;
   float: left;
   padding: 0;
@@ -285,6 +285,19 @@ border-radius: 5px;
 
 p.game-description{
   font-size: 12px;
+  margin: auto;
+
+}
+
+.left-block{
+  margin-top: 20px;
+  width: 650px;
+}
+
+.right-block{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 320px;
 }
 
 .game-inline{
@@ -296,6 +309,20 @@ p.game-description{
   color: #0ba854;
   font-weight: bold;
   font-size: 1.5em;
+}
+
+.game-requirements p{
+  font-size: 12px;
+}
+
+.game-review{
+  font-size: 14px;
+}
+
+blockquote.game-review{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
 }
 
 .col-centered{
