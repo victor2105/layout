@@ -241,6 +241,7 @@ p.game-description{
   font-size: 1.5em;
 }
 
-.selling-items-table{
+#selling-items-table td{
   vertical-align: middle;
+  text-align: center;
 }
