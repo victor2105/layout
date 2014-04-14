@@ -292,6 +292,25 @@ p.game-description{
   padding-top:1em;
 }
 
+.btn-developers {
+  color: #ffffff;
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+span.developers {
+  float: right;
+}
+
+span.copyright {
+  font-size: 12px;
+}
+
+span.legal {
+  font-size: 12px;
+  float: right;
+}
+
 .price{
   color: #0ba854;
   font-weight: bold;
