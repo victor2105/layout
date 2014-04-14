@@ -356,4 +356,8 @@ blockquote.game-review{
     height: 100px;
 }
 
-
+.edit-input {
+    width: 80px;
+    text-align: center;
+    margin: 0 auto;
+}
