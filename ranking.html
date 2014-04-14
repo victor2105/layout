@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Istim | Reviews</title>
+    <title>Istim | Ranking</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -56,89 +56,66 @@
         </div>
     </div>
 
-    <div class="col-xs-3">
-        <div class="list-group">
-            <a href="#" class="list-group-item">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <img class="img-responsive" src="http://placehold.it/200x200">
-                    </div>
-                    <div class="col-xs-8">
-                        <h4 class="list-group-item-heading">Nome do Jogador</h4>
-                        <p class="list-group-item-text">
-                            Moedas: <span class="color-yellow"><i class="fa fa-bitcoin"></i> 131231</span>
-                        </p>
-                    </div>
-                </div>
+    <div class="list-group col-md-6 col-md-offset-3">
 
-            </a>
-        </div>
+      <h1>Earthland Realms</h1>
 
+      <table class="table table-striped table-hover ">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Jogador</th>
+            <th>Pontua&ccedil;&atilde;o</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>ShadowKnight</td>
+            <td>120.980.050</td>
+            <td><span class="fa icon fa-user color-green"></span>Online</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>WarriorMarge</td>
+            <td>80.750.120</td>
+            <td><span class="fa icon fa-user"></span>Offline</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>CycloidDolph</td>
+            <td>72.900.550</td>
+            <td><span class="fa icon fa-user"></span>Offline</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>TurkeySkinner</td>
+            <td>69.815.210</td>
+            <td><span class="fa icon fa-user color-green"></span>Online</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>MantisBurns</td>
+            <td>15.180.390</td>
+            <td><span class="fa icon fa-user"></span>Offline</td>
+          </tr>
+        </tbody>
+      </table>
 
+      <ul class="pagination">
+        <li class="disabled"><a href="#">«</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+      </ul>
 
-        <div class="list-group">
-
-            <a href="#" class="list-group-item">
-                Mario da burrinha <span class="fa icon fa-user pull-right color-green"></span>
-            </a>
-            <a href="#" class="list-group-item">
-                Victor Henrique <span class="fa icon fa-user pull-right"></span>
-            </a>
-            <a href="#" class="list-group-item">
-                ninguem <span class="fa icon fa-user pull-right"></span>
-            </a>
-        </div>
     </div>
 
-    <div class="col-xs-6">
-      <div class="panel panel-default ">
-      <div class="panel-heading">Review</div>
-      <div class="panel-body">
-      <div ng-controller='reviewController'>
-          <table class="table table-bordered">
-              <thead>
-                  <tr>
-                      <th>Nome do Jogo</th>
-                      <th>Média</th>
-                      <th>Review</th>
-                      <th>Comentários</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>Mario da burrinha</td>
-                      <td>10.0</td>
-                      <td>100.000.000</td>
-
-                      <td>
-                          <button type="button" class="btn btn-default">Visualizar</button>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Batman</td>
-                      <td>10.0</td>
-                      <td>50.345.30</td>
-                      <td>
-                          <button type="button" class="btn btn-default">Visualizar</button>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Bomberman</td>
-                      <td>10.0</td>
-                      <td>45.454.98</td>
-                      <td>
-                          <button type="button" class="btn btn-default">Visualizar</button>
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-      </div>
-      </div>
-      </div>
-    </div>
-
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

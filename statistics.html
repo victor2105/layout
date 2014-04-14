@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Istim | Statistics</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/normalize.css" >
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="js/Chart.js"></script>
 
     <style>
         canvas{
@@ -38,17 +37,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Istim Games &#8482</a>
+            <a class="navbar-brand" href="index.html">Istim &#8482</a>
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-
-
-                <li><a href="games.html">Meus Games</a></li>
-                <li><a href="buyGames.html">Comprar Games</a></li></a></li>
+                <li><a href="games.html">My Games</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Cash<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Recharge</a></li>
+                        <li><a href="transfer.html">Transfer</a></li>
+                        <li><a href="#">Transfer History</a></li>
+                        <li><a href="#">Recharge History</a></li>
+                    </ul>
+                </li>
+                <li><a href="buyGames.html">Buy Games</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="statistics.html">Statistics</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="addfriend.html">Add friend</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="fa icon fa-user"></span>Profile</a></li>
@@ -115,6 +122,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/Chart.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
