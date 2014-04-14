@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Istim - Dashboard</title>
+	<title>Istim | Dashboard</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -66,20 +66,29 @@
 	</div>
 	<div class="navbar-collapse collapse navbar-responsive-collapse">
 		<ul class="nav navbar-nav">
-
-			<li><a href="games.html">Meus Games</a></li>
-			<li><a href="buyGames.html">Comprar Games</a></li></a></li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">About</a></li>
+            <li><a href="games.html">My Games</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Cash<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Recharge</a></li>
+                    <li><a href="transfer.html">Transfer</a></li>
+                    <li><a href="#">Transfer History</a></li>
+                    <li><a href="#">Recharge History</a></li>
+                </ul>
+            </li>
+            <li><a href="buyGames.html">Buy Games</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li><a href="about.html">About</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#"><span class="fa icon fa-user"></span>Profile</a></li>
+			<li><a href="profile.html"><span class="fa icon fa-user"></span>Profile</a></li>
 			<li><a href="#"><span class="fa icon fa-sign-out"></span>Sign out</a></li>
 		</ul>
 	</div>
 </div>
 
-<div class="col-xs-3">
+<div class="col-md-3">
 	<div class="list-group">
 		<a href="#" class="list-group-item">
 			<div class="row">
@@ -98,6 +107,52 @@
 	</div>
 </div>
 
+<div class="col-md-9">
+	<div class="panel panel-default ">
+	  <div class="panel-heading">Mais Jogados</div>
+	  <div class="panel-body">
+	  	<div class="row">
+		    <div class="game-dash col-md-4">
+		    	<img class="img-responsive" src="http://placehold.it/32x32">
+		    	<p>Joguim dos Leleks 2 - Lesk's Revenge</p>
+		    	<div class="actions">
+		    		<a href="#"><span class="fa icon fa-gamepad"></span>Jogar</a>
+		    		<a href="#"><span class="fa icon fa-arrow-right"></span>Ver Detalhes</a>
+		    	</div>
+		    </div>
+
+		    <div class="game-dash col-md-4">
+		    	<img class="img-responsive" src="http://placehold.it/32x32">
+		    	<p>Joguim dos Leleks 5 - The End of a Lek's Saga</p>
+		    	<div class="actions">
+		    		<a href="#"><span class="fa icon fa-gamepad"></span>Jogar</a>
+		    		<a href="#"><span class="fa icon fa-arrow-right"></span>Ver Detalhes</a>
+		    	</div>
+		    </div>
+
+		    <div class="game-dash col-md-4">
+		    	<img class="img-responsive" src="http://placehold.it/32x32">
+		    	<p>Joguim dos Leleks 1 - The Eight Square Society</p>
+		    	<div class="actions">
+		    		<a href="#"><span class="fa icon fa-gamepad"></span>Jogar</a>
+		    		<a href="#"><span class="fa icon fa-arrow-right"></span>Ver Detalhes</a>
+		    	</div>
+		    </div>
+	    </div>
+
+    	<div class="row">
+  	    <div class="game-dash col-md-4">
+  	    	<img class="img-responsive" src="http://placehold.it/32x32">
+  	    	<p>Dota 2</p>
+  	    	<div class="actions">
+  	    		<a href="#"><span class="fa icon fa-gamepad"></span>Jogar</a>
+  	    		<a href="#"><span class="fa icon fa-arrow-right"></span>Ver Detalhes</a>
+  	    	</div>
+  	    </div>
+  	  </div>
+	  </div>
+	</div>
+</div>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
