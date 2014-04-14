@@ -298,6 +298,10 @@ p.game-description{
   border-color: #0066cc;
 }
 
+.panel-developers {
+  margin-top: 1em;
+}
+
 span.developers {
   float: right;
 }
