@@ -257,3 +257,13 @@ p.game-description{
 .game-requirements p{
   font-size: 12px;
 }
+
+.game-review{
+  font-size: 14px;
+}
+
+blockquote.game-review{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
