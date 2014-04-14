@@ -352,4 +352,10 @@ blockquote.game-review{
     height: 100px;
 }
 
+#topgames td {
+    vertical-align: middle;
+}
 
+#topgames td img {
+    margin-right: 1em;
+}
