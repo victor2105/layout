@@ -196,6 +196,10 @@ border-radius: 5px;
   color: white;
 }
 
+.find-users-panel {
+  margin-top: 3%;
+}
+
 .achievement h4 {
   font-weight: 700;
   margin-bottom: 0;
