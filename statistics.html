@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Istim | Statistics</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,6 +16,14 @@
     <link rel="stylesheet" href="css/normalize.css" >
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/Chart.js"></script>
+
+    <style>
+        canvas{
+            /*background-color: #FFFFFF;*/
+        }
+    </style>
+
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -30,119 +38,88 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Istim &trade;</a>
+            <a class="navbar-brand" href="index.html">Istim Games &#8482</a>
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="games.html">My Games</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Cash<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Recharge</a></li>
-                        <li><a href="transfer.html">Transfer</a></li>
-                        <li><a href="#">Transfer History</a></li>
-                        <li><a href="rechargehistory.html">Recharge History</a></li>
-                    </ul>
-                </li>
-                <li><a href="buy_games.html">Buy Games</a></li>
+
+                <li><a href="#">Games</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="statistics.html">Statistics</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="addfriend.html">Add friend</a></li>
+                <li><a href="about.html">About</a></li>              
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="fa icon fa-user"></span>Profile</a></li>
                 <li><a href="#"><span class="fa icon fa-sign-out"></span>Sign out</a></li>
-            </ul>
-        </div>
-    </div>
-
-     <div class="col-md-4 col-md-offset-4 search-field">
-        <div class="input-group">
-        <span class="input-group-addon"><span class="fa icon fa-search"></span></span><input type="text" class="form-control" placeholder="Buscar ">
-      </div>
-      </div>
-
-    <div class="list-group game-list col-md-6 col-md-offset-3">
-
-    <div class="panel panel-default games-panel">
-      <div class="panel-body">
-        <img src="http://imgs-srzd.s3.amazonaws.com/srzd/upload/l/e/leleks.jpg" alt="" class="game-icon"/>
-
-          <div class = "game-list-title">
-            Joguim dos Leleks 2 - Lesk's Revenge
-          </div>
-          <div class = "game-list-stars pull-right">
-            <span class="fa fa-star "></span>
-            <span class="fa fa-star "></span>
-            <span class="fa fa-star "></span>
-            <span class="fa fa-star-half-o "></span>
-            <span class="fa fa-star-o "></span>
-          </div>
-
-          <p>
-            Se prepare pra esse lelekagem e zuera.
-          </p>
-
-        <p class="list-group-item-text">
-          <span class="fa icon far-left fa-play-circle-o "></span> <a href="#">Jogar</a>
-          <span class="hidden-xs">
-            <span class="fa icon fa-comments "></span><a href="#">Comentários</a>
-            <span class="fa icon fa-pencil "></span><a href="#">Escrever Review</a>
-          </span>
-
-          <span class="fa icon fa-trophy"></span><a href="#" data-toggle="collapse" data-target="#achievements-list">Conquistas</a>
-
-        </p>
-
-      <div id="achievements-list" class="achievements-list collapse">
-        <div class="progress">
-          <div class="progress-bar" style="width: 33%;"></div>
-          <span>1 de 3 concluídos</span>
-        </div>
-
-       <div class="panel panel-default achievement done">
-          <div class="panel-body">
-            <img src="http://www.opresente.com.br/media/webmedia/files/lek_1.jpg" />
-            <div class="achievement-text">
-              <h4>
-                No passinho do volante
-              </h4>
-              <p>
-                Quero ver o baile todo
-              </p>
             </div>
-          </div>
         </div>
 
-        <div class="col-xs-9">
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="panel panel-default">
-                          <div class="panel-heading">
-                                <h3 class="panel-title">Most Popular Games</h3>
-                          </div>
-                          <div class="panel-body">
-                                <canvas id="canvas_most" height="450" width="505"></canvas>
-                          </div>
+        <div class="col-xs-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="http://placehold.it/200x200">
+                        </div>
+                        <div class="col-xs-8">
+                            <h4 class="list-group-item-heading">Nome do Jogador</h4>
+                            <p class="list-group-item-text">
+                                Moedas: <span class="color-yellow"><i class="fa fa-bitcoin"></i> 131231</span>
+                            </p>
+                        </div>
                     </div>
-                </div><!-- .col-xs-6 -->
-                <div class="col-xs-6">
-                    <div class="panel panel-default">
-                          <div class="panel-heading">
-                                <h3 class="panel-title">Least Popular Games</h3>
-                          </div>
-                          <div class="panel-body">
-                                <canvas id="canvas_least" height="450" width="505"></canvas>
-                          </div>
-                    </div>
-                </div><!-- .col-xs-6 -->
-            </div><!-- .row -->
-        </div><!-- .col-xs-9 -->
+
+                </a>
+            </div>
+
+            <div class="list-group">
+
+                <a href="#" class="list-group-item">
+                    Mario da burrinha <span class="fa icon fa-user pull-right color-green"></span>
+                </a>
+                <a href="#" class="list-group-item">
+                    Victor Henrique <span class="fa icon fa-user pull-right"></span>
+                </a>
+                <a href="#" class="list-group-item">
+                    Pirata Lafayete <span class="fa icon fa-user pull-right"></span>
+                </a>
+            </div>
+        </div>      
+
+        <h1><center>Most Popular Games</center></h1>
+
+        <canvas id="canvas" height="450" width="600"></canvas>
+
+        <script>
+
+            var barChartData = {
+                labels : ["League of Legends","Dota","Angry Birds","Flapy Bird","Spirit Stones","Dark Sols","Monster Hunter"],
+                datasets : [
+                    {
+                        fillColor : "rgba(151,187,205,0.8)",
+                        strokeColor : "rgba(151,187,205,1)",
+                        data : [100,80,70,50,30,10,5]
+                    }
+                ]
+            }
+
+            var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Bar(barChartData);
+
+        </script>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/Chart.js"></script>
         <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                                                                    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                                   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                                   e.src='//www.google-analytics.com/analytics.js';
+                                   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
     </body>
 </html>
