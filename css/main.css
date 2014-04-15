@@ -368,3 +368,15 @@ blockquote.game-review{
 #topgames td img {
     margin-right: 1em;
 }
+
+.store-sale-item {
+    padding: 1em;
+}
+
+.store-sale-item h1 {
+    margin-top: 0;
+}
+
+.store-sale-item .btn-white {
+    border-color: white;
+}

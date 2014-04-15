@@ -14,6 +14,8 @@
 	<link href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/slate/bootstrap.min.css" rel="stylesheet">
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css" >
+	<link rel="stylesheet" href="js/vendor/owlcarousel/owl.carousel.css">
+	<link rel="stylesheet" href="js/vendor/owlcarousel/owl.theme.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -163,52 +165,71 @@
 				<div class="col-xs-6">
 					<div class="panel panel-default">
 						  <div class="panel-heading">
-								<h3 class="panel-title">Top Games</h3>
+								<h3 class="panel-title">Loja de Itens</h3>
 						  </div>
-						  <table class="table table-striped table-hover" id="topgames">
-					        <thead>
-					          <tr>
-					            <th>#</th>
-					            <th>Jogo</th>
-					            <th>Review</th>
-					          </tr>
-					        </thead>
-					        <tbody>
-					          <tr>
-					          	<td>1</td>
-					            <td><img src="http://placehold.it/45x45" alt=""> Zelda - A link to the past</td>
-					            <td>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star-half-o "></span>
-					            </td>
-					          </tr>
-					          <tr>
-					          	<td>2</td>
-					            <td><img src="http://placehold.it/45x45" alt=""> Flappy Bird</td>
-					            <td>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star-o "></span>
-					            </td>
-					          </tr>
-					          <tr>
-					          	<td>3</td>
-					            <td><img src="http://placehold.it/45x45" alt=""> Diablo III</td>
-					            <td>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star "></span>
-						            <span class="fa fa-star-o "></span>
-					            </td>
-					          </tr>
-					        </tbody>
-				        </table>
+						  <div class="panel-body">
+						  	<div class="store-sale">
+						  		<div class="store-sale-item">
+						  			<div class="row">
+						  				<div class="col-md-3">
+						  					<img src="img/items/big/1.png" alt="" class="img-responsive">
+						  				</div><!-- .col-md-3 -->
+						  				<div class="col-md-9">
+						  					<h1>Hookshot</h1>
+						  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex quos modi quo molestias lorem ipsum dolor sit amet.</p>
+						  				</div><!-- .col-md-9 -->
+						  			</div><!-- .row -->
+						  		</div><!-- .store-sale-item -->
+
+						  		<div class="store-sale-item">
+						  			<div class="row">
+						  				<div class="col-md-3">
+						  					<img src="img/items/big/2.png" alt="" class="img-responsive">
+						  				</div><!-- .col-md-3 -->
+						  				<div class="col-md-9">
+						  					<h1>Stick</h1>
+						  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex quos modi quo molestias lorem ipsum dolor sit amet.</p>
+						  				</div><!-- .col-md-9 -->
+						  			</div><!-- .row -->
+						  		</div><!-- .store-sale-item -->
+
+						  		<div class="store-sale-item">
+						  			<div class="row">
+						  				<div class="col-md-3">
+						  					<img src="img/items/big/3.png" alt="" class="img-responsive">
+						  				</div><!-- .col-md-3 -->
+						  				<div class="col-md-9">
+						  					<h1>Coconut</h1>
+						  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex quos modi quo molestias lorem ipsum dolor sit amet.</p>
+						  				</div><!-- .col-md-9 -->
+						  			</div><!-- .row -->
+						  		</div><!-- .store-sale-item -->
+
+						  		<div class="store-sale-item">
+						  			<div class="row">
+						  				<div class="col-md-3">
+						  					<img src="img/items/big/4.png" alt="" class="img-responsive">
+						  				</div><!-- .col-md-3 -->
+						  				<div class="col-md-9">
+						  					<h1>Bomb</h1>
+						  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex quos modi quo molestias lorem ipsum dolor sit amet.</p>
+						  				</div><!-- .col-md-9 -->
+						  			</div><!-- .row -->
+						  		</div><!-- .store-sale-item -->
+
+						  		<div class="store-sale-item">
+						  			<div class="row">
+						  				<div class="col-md-3">
+						  					<img src="img/items/big/5.png" alt="" class="img-responsive">
+						  				</div><!-- .col-md-3 -->
+						  				<div class="col-md-9">
+						  					<h1>Bow</h1>
+						  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex quos modi quo molestias lorem ipsum dolor sit amet.</p>
+						  				</div><!-- .col-md-9 -->
+						  			</div><!-- .row -->
+						  		</div><!-- .store-sale-item -->
+						  	</div><!-- .store-sale -->
+						  </div>
 					</div>
 				</div><!-- .col-xs-6 -->
 
@@ -261,6 +282,81 @@
 				        </table>
 					</div>
 				</div>
+
+				<div class="col-xs-12">
+					<div class="panel panel-default">
+						  <div class="panel-heading">
+								<h3 class="panel-title">Top Games</h3>
+						  </div>
+						  <table class="table table-striped table-hover" id="topgames">
+					        <thead>
+					          <tr>
+					            <th>#</th>
+					            <th>Jogo</th>
+					            <th>Nota Comunidade</th>
+					            <th>Nota Istim</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					          <tr>
+					          	<td>1</td>
+					            <td><img src="http://placehold.it/45x45" alt=""> Zelda - A link to the past</td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+					            </td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star-half-o "></span>
+					            </td>
+					          </tr>
+					          <tr>
+					          	<td>2</td>
+					            <td><img src="http://placehold.it/45x45" alt=""> Flappy Bird</td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star-half-o "></span>
+						            <span class="fa fa-star-o "></span>
+					            </td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star-o "></span>
+					            </td>
+					          </tr>
+					          <tr>
+					          	<td>3</td>
+					            <td><img src="http://placehold.it/45x45" alt=""> Diablo III</td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star-o "></span>
+					            </td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star-o "></span>
+					            </td>
+					          </tr>
+					        </tbody>
+				        </table>
+					</div>
+
+				</div><!-- .col-xs-12 -->
 			</div>
 
 		</div>
@@ -274,6 +370,7 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="js/vendor/owlcarousel/owl.carousel.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 </body>
