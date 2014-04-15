@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Istim - AddCoins</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/slate/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Istim  &#8482</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="games.html">Meus Games</a></li>
+                <li><a href="buyGames.html">Comprar Games</a></li></a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gerenciamento da Conta <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="transfer.html">Transferência de Cash</a></li>
+                          <li><a href="#">Recarga de Cash</a></li>
+                          <li><a href="#">Histórico de Transferência</a></li>
+                          <li><a href="#">Histórico de Recarga</a></li>
+                        </ul>
+                      </li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="fa icon fa-user"></span>Profile</a></li>
+                <li><a href="#"><span class="fa icon fa-sign-out"></span>Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-xs-3">
+        <div class="list-group">
+            <a href="#" class="list-group-item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img class="img-responsive" src="http://placehold.it/200x200">
+                    </div>
+                    <div class="col-xs-8">
+                        <h4 class="list-group-item-heading">Nome do Jogador</h4>
+                        <p class="list-group-item-text">
+                            Moedas: <span class="color-yellow"><i class="fa fa-bitcoin"></i> 131231</span>
+                        </p>
+                    </div>
+                </div>
+
+            </a>
+        </div>
+
+
+
+        <div class="list-group">
+
+            <a href="#" class="list-group-item">
+                Mario da burrinha <span class="fa icon fa-user pull-right color-green"></span>
+            </a>
+            <a href="#" class="list-group-item">
+                Victor Henrique <span class="fa icon fa-user pull-right"></span>
+            </a>
+            <a href="#" class="list-group-item">
+                ninguem <span class="fa icon fa-user pull-right"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-xs-5">
+    <div class="title-add-coins">
+      <h1>Adicionar Coins à sua Conta Istim</h1>
+        <p class = "opa">Fundos na sua Carteira Istim podem ser usados na compra de qualquer jogo no Istim ou em transações com outros jogadores.</p>
+    </div>
+    
+    <div class="list-group">
+  <a href="#" class="list-group-item" id="list-coin">
+    <h2 class="list-group-item-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 1.000</span> <span class="color-green">(R$ 10,00)</span>           
+
+        <div class="pull-right col-xs-4.5">
+         <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                ADICIONAR COINS
+         </button>
+        </div>
+    </h2>
+
+    <p class="list-group-item-text" id="min-val">Valor mínimo de coins</p>
+  </a>
+
+   <a href="#" class="list-group-item" id="list-coin">
+    <h2 class="list-group-item-heading" id="val-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 2.000</span> <span class="color-green">(R$ 20,00)</span>
+      <div class="pull-right col-xs-4.5">
+         <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                ADICIONAR COINS
+        </button>
+      </div>
+    </h2>
+   </a>
+
+   <a href="#" class="list-group-item" id="list-coin">
+    <h2 class="list-group-item-heading" id="val-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 5.000</span> <span class="color-green">(R$ 50,00)</span>
+        <div class="pull-right col-xs-4.5">
+         <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                ADICIONAR COINS
+         </button>
+        </div>
+    </h2>
+  </a>
+   <a href="#" class="list-group-item" id="list-coin">
+    <h2 class="list-group-item-heading" id="val-heading">Adicionar R$ <span class="color-yellow"><i class="fa fa-bitcoin"></i> 10.000</span> <span class="color-green">(R$ 100,00)</span>
+        <div class="pull-right col-xs-4.5">
+         <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                ADICIONAR COINS
+         </button>
+        </div>
+    </h2>
+    </h2>
+  </a>
+   <a href="#" class="list-group-item" id="list-coin">
+    <h2 class="list-group-item-heading" id="val-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 15.000</span> <span class="color-green">(R$ 150,00)</span>
+        <div class="pull-right col-xs-4.5">
+         <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                ADICIONAR COINS
+         </button>
+        </div>
+    </h2>
+    </h2>
+  </a>
+</div>
+    </div>
+
+    <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <center>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h1 class="modal-title" id="myModalLabel">Adicionar Coin</h1>
+      </div>
+      </center>
+      <div class="modal-body">
+<form class="form-horizontal" id="form-payment">
+  <fieldset>
+    <legend>Forma de Pagamento</legend>
+    <div class="form-group">
+      <label for="select" class="col-lg-1 control-label">Forma de Pagamento:</label>      
+      <div class="col-lg-3">
+        <select class="form-control" id="select">
+          <option>Cartão</option>
+          <option>Boleto</option>
+        </select>
+      </div>
+      <label for="numero" class="col-lg-3 control-label">Número do Cartão:</label>
+      <div class="col-lg-3">
+        <input type="text" class="form-control" id="inputCardNumber" placeholder="">
+      </div>
+    </div>
+     <div class="form-group">
+      <label for="select" class="col-lg-1 control-label">Data de Validade:</label>      
+      <div class="col-lg-3">
+        <input type="date" class="form-control">
+      </div>
+      <label for="numero" class="col-lg-3 control-label">Código de Segurança:</label>
+      <div class="col-lg-2">
+        <input type="tel" class="form-control">
+      </div>
+    </div>
+  <legend>Informações de Cobrança</legend>
+
+    <div class="form-group">
+      <label class="col-lg-1 control-label">Nome:</label>      
+      <div class="col-lg-3">
+        <input type="text" class="form-control">
+      </div>
+      <label for="numero" class="col-lg-3 control-label">Telefone:</label>
+      <div class="col-lg-3">
+        <input type="tel" class="form-control">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-1 control-label">País:</label>      
+      <div class="col-lg-3">
+        <select class="form-control" id="select">
+          <option>Brasil</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <label for="numero" class="col-lg-3 control-label">Cidade:</label>
+      <div class="col-lg-3">
+        <input type="text" class="form-control" placeholder="">
+      </div>
+    </div>
+  <br>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-9">
+        <button class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
