@@ -386,6 +386,11 @@ blockquote.game-review{
     margin-right: 1em;
 }
 
+#items-trade td{
+  vertical-align: middle;
+  text-align: center;
+}
+
 .store-sale-item {
     padding: 1em;
 }
