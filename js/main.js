@@ -36,6 +36,10 @@ $('#items-table .item').each(function() {
   });
 });
 
+$('#selling-items-table tbody tr').click(function() {
+  $('#modal-details').modal('show');
+});
+
 
 $(document).ready(function() {
 
