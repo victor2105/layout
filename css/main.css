@@ -2,6 +2,11 @@ body{
     padding-bottom: 40px; /*Espaçamento para o friend list button*/
 }
 
+.table-centered td {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
 .icon {
     padding-right: 0.5em;
 }
@@ -423,7 +428,7 @@ blockquote.game-review{
   border-radius: 5px;
 }
 
-#form-payment legend {  
+#form-payment legend {
   text-align: center;
 }
 #items-trade td{
