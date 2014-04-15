@@ -10,6 +10,10 @@ body{
   color: yellow;
 }
 
+.color-green {
+  color: green;
+}
+
 /* sign up modal style*/
 .signup-modal-content{
   height: 430px;
@@ -297,6 +301,7 @@ p.game-description{
 .col-centered{
     float: none;
     margin: 0 auto;
+}
 
 .login-popup .btn-success {
   background-image: linear-gradient(#2f7d2f, #379337 40%, #3da23d);
@@ -305,4 +310,39 @@ p.game-description{
 
 #items-table .item > div {
   cursor: pointer;
+}
+
+.title-add-coins{
+ text-align: center;
+}
+
+#list-coin{
+  height: 65px;
+}
+
+#val-heading {
+  line-height: 45px;
+}
+
+.list-group-item-heading {
+  vertical-align: center;
+}
+
+#min-val{
+  font-size: 13px;
+  margin-top: -0.3em;
+}
+
+#well-coin{
+  height: 38px;
+  margin-top: 0.25em;
+  line-height: 20px;
+}
+
+#tabela-add-coin{
+  border-radius: 5px;
+}
+
+#form-payment legend {  
+  text-align: center;
 }
