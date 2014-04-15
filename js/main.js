@@ -35,3 +35,17 @@ $('#items-table .item').each(function() {
     $('#modal-details').modal('show');
   });
 });
+
+
+$(document).ready(function() {
+
+  $(".store-sale").owlCarousel({
+
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+
+  });
+
+});
