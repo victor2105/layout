@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>Istim | Dashboard</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,6 +14,8 @@
 	<link href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/slate/bootstrap.min.css" rel="stylesheet">
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css" >
+	<link rel="stylesheet" href="js/vendor/owlcarousel/owl.carousel.css">
+	<link rel="stylesheet" href="js/vendor/owlcarousel/owl.theme.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -62,47 +64,313 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="#">Istim</a>
+		<a class="navbar-brand" href="#">Istim &trade;</a>
 	</div>
 	<div class="navbar-collapse collapse navbar-responsive-collapse">
 		<ul class="nav navbar-nav">
-
-			<li><a href="#">Games</a></li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">About</a></li>              
+            <li><a href="games.html">My Games</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Cash<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Recharge</a></li>
+                    <li><a href="transfer.html">Transfer</a></li>
+                    <li><a href="#">Transfer History</a></li>
+                    <li><a href="rechargehistory.html">Recharge History</a></li>
+                </ul>
+            </li>
+            <li><a href="buy_games.html">Buy Games</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li><a href="about.html">About</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#"><span class="fa icon fa-user"></span>Profile</a></li>
+			<li><a href="profile.html"><span class="fa icon fa-user"></span>Profile</a></li>
 			<li><a href="#"><span class="fa icon fa-sign-out"></span>Sign out</a></li>
 		</ul>
 	</div>
 </div>
 
-<div class="col-xs-3">
-	<div class="list-group">
-		<a href="#" class="list-group-item">
+<div class="container-fluid">
+	<div class="row">
+
+		<div class="col-md-3">
+			<div class="list-group">
+				<a href="#" class="list-group-item">
+					<div class="row">
+						<div class="col-xs-4">
+							<img class="img-responsive" src="http://placehold.it/200x200">
+						</div>
+						<div class="col-xs-8">
+							<h4 class="list-group-item-heading">Nome do Jogador</h4>
+							<p class="list-group-item-text">
+								Moedas: <span class="color-yellow"><i class="fa fa-bitcoin"></i> 131231</span>
+							</p>
+						</div>
+					</div>
+
+				</a>
+			</div>
+		</div>
+
+		<div class="col-md-9">
+
 			<div class="row">
-				<div class="col-xs-4">
-					<img class="img-responsive" src="http://placehold.it/200x200">
+				<div class="col-xs-12">
+					<div class="panel panel-default ">
+					  <div class="panel-heading">Mais Jogados</div>
+					  <div class="panel-body">
+					  	<div class="row">
+						    <div class="game-dash col-md-4">
+						    	<img class="img-responsive" src="http://placehold.it/32x32">
+						    	<p>Joguim dos Leleks 2 - Lesk's Revenge</p>
+						    	<div class="actions">
+						    		<a href="#"><span class="fa icon fa-gamepad"></span>Jogar</a>
+						    		<a href="#"><span class="fa icon fa-arrow-right"></span>Ver Detalhes</a>
+						    	</div>
+						    </div>
+
+						    <div class="game-dash col-md-4">
+						    	<img class="img-responsive" src="http://placehold.it/32x32">
+						    	<p>Joguim dos Leleks 5 - The End of a Lek's Saga</p>
+						    	<div class="actions">
+						    		<a href="#"><span class="fa icon fa-gamepad"></span>Jogar</a>
+						    		<a href="#"><span class="fa icon fa-arrow-right"></span>Ver Detalhes</a>
+						    	</div>
+						    </div>
+
+						    <div class="game-dash col-md-4">
+						    	<img class="img-responsive" src="http://placehold.it/32x32">
+						    	<p>Joguim dos Leleks 1 - The Eight Square Society</p>
+						    	<div class="actions">
+						    		<a href="#"><span class="fa icon fa-gamepad"></span>Jogar</a>
+						    		<a href="#"><span class="fa icon fa-arrow-right"></span>Ver Detalhes</a>
+						    	</div>
+						    </div>
+					    </div>
+
+				    	<div class="row">
+				  	    <div class="game-dash col-md-4">
+				  	    	<img class="img-responsive" src="http://placehold.it/32x32">
+				  	    	<p>Dota 2</p>
+				  	    	<div class="actions">
+				  	    		<a href="#"><span class="fa icon fa-gamepad"></span>Jogar</a>
+				  	    		<a href="#"><span class="fa icon fa-arrow-right"></span>Ver Detalhes</a>
+				  	    	</div>
+				  	    </div>
+				  	  </div>
+					  </div>
+					</div>
 				</div>
-				<div class="col-xs-8">
-					<h4 class="list-group-item-heading">Nome do Jogador</h4>
-					<p class="list-group-item-text">
-						Moedas: <span class="color-yellow"><i class="fa fa-bitcoin"></i> 131231</span>
-					</p>
+
+				<div class="col-xs-6">
+					<div class="panel panel-default">
+						  <div class="panel-heading">
+								<h3 class="panel-title">Loja de Itens</h3>
+						  </div>
+						  <div class="panel-body">
+						  	<div class="store-sale">
+						  		<div class="store-sale-item">
+						  			<div class="row">
+						  				<div class="col-md-3">
+						  					<img src="img/items/big/1.png" alt="" class="img-responsive">
+						  				</div><!-- .col-md-3 -->
+						  				<div class="col-md-9">
+						  					<h1><a href="#">Hookshot</a> <span class="badge"><i class="fa fa-bitcoin"></i> 300.00</span></h1>
+						  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex quos modi quo molestias lorem ipsum dolor sit amet.</p>
+						  				</div><!-- .col-md-9 -->
+						  			</div><!-- .row -->
+						  		</div><!-- .store-sale-item -->
+
+						  		<div class="store-sale-item">
+						  			<div class="row">
+						  				<div class="col-md-3">
+						  					<img src="img/items/big/2.png" alt="" class="img-responsive">
+						  				</div><!-- .col-md-3 -->
+						  				<div class="col-md-9">
+						  					<h1><a href="#">Stick</a> <span class="badge"><i class="fa fa-bitcoin"></i> 300.00</span></h1>
+						  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex quos modi quo molestias lorem ipsum dolor sit amet.</p>
+						  				</div><!-- .col-md-9 -->
+						  			</div><!-- .row -->
+						  		</div><!-- .store-sale-item -->
+
+						  		<div class="store-sale-item">
+						  			<div class="row">
+						  				<div class="col-md-3">
+						  					<img src="img/items/big/3.png" alt="" class="img-responsive">
+						  				</div><!-- .col-md-3 -->
+						  				<div class="col-md-9">
+						  					<h1><a href="#">Coconut</a> <span class="badge"><i class="fa fa-bitcoin"></i> 300.00</span></h1>
+						  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex quos modi quo molestias lorem ipsum dolor sit amet.</p>
+						  				</div><!-- .col-md-9 -->
+						  			</div><!-- .row -->
+						  		</div><!-- .store-sale-item -->
+
+						  		<div class="store-sale-item">
+						  			<div class="row">
+						  				<div class="col-md-3">
+						  					<img src="img/items/big/4.png" alt="" class="img-responsive">
+						  				</div><!-- .col-md-3 -->
+						  				<div class="col-md-9">
+						  					<h1><a href="#">Bomb</a> <span class="badge"><i class="fa fa-bitcoin"></i> 300.00</span></h1>
+						  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex quos modi quo molestias lorem ipsum dolor sit amet.</p>
+						  				</div><!-- .col-md-9 -->
+						  			</div><!-- .row -->
+						  		</div><!-- .store-sale-item -->
+
+						  		<div class="store-sale-item">
+						  			<div class="row">
+						  				<div class="col-md-3">
+						  					<img src="img/items/big/5.png" alt="" class="img-responsive">
+						  				</div><!-- .col-md-3 -->
+						  				<div class="col-md-9">
+						  					<h1><a href="#">Bow</a> <span class="badge"><i class="fa fa-bitcoin"></i> 300.00</span></h1>
+						  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex quos modi quo molestias lorem ipsum dolor sit amet.</p>
+						  				</div><!-- .col-md-9 -->
+						  			</div><!-- .row -->
+						  		</div><!-- .store-sale-item -->
+						  	</div><!-- .store-sale -->
+						  </div>
+					</div>
+				</div><!-- .col-xs-6 -->
+
+				<div class="col-xs-6">
+					<div class="panel panel-default">
+						  <div class="panel-heading">
+								<h3 class="panel-title">Ranking Geral</h3>
+						  </div>
+						  <table class="table table-striped table-hover ">
+					        <thead>
+					          <tr>
+					            <th>#</th>
+					            <th>Jogador</th>
+					            <th>Pontua&ccedil;&atilde;o</th>
+					            <th>Status</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					          <tr>
+					            <td>1</td>
+					            <td>ShadowKnight</td>
+					            <td>120.980.050</td>
+					            <td><span class="fa icon fa-user color-green"></span>Online</td>
+					          </tr>
+					          <tr>
+					            <td>2</td>
+					            <td>WarriorMarge</td>
+					            <td>80.750.120</td>
+					            <td><span class="fa icon fa-user"></span>Offline</td>
+					          </tr>
+					          <tr>
+					            <td>3</td>
+					            <td>CycloidDolph</td>
+					            <td>72.900.550</td>
+					            <td><span class="fa icon fa-user"></span>Offline</td>
+					          </tr>
+					          <tr>
+					            <td>4</td>
+					            <td>TurkeySkinner</td>
+					            <td>69.815.210</td>
+					            <td><span class="fa icon fa-user color-green"></span>Online</td>
+					          </tr>
+					          <tr>
+					            <td>5</td>
+					            <td>MantisBurns</td>
+					            <td>15.180.390</td>
+					            <td><span class="fa icon fa-user"></span>Offline</td>
+					          </tr>
+					        </tbody>
+				        </table>
+					</div>
 				</div>
+
+				<div class="col-xs-12">
+					<div class="panel panel-default">
+						  <div class="panel-heading">
+								<h3 class="panel-title">Top Games</h3>
+						  </div>
+						  <table class="table table-striped table-hover" id="topgames">
+					        <thead>
+					          <tr>
+					            <th>#</th>
+					            <th>Jogo</th>
+					            <th>Nota Comunidade</th>
+					            <th>Nota Istim</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					          <tr>
+					          	<td>1</td>
+					            <td><img src="http://placehold.it/45x45" alt=""> Zelda - A link to the past</td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+					            </td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star-half-o "></span>
+					            </td>
+					          </tr>
+					          <tr>
+					          	<td>2</td>
+					            <td><img src="http://placehold.it/45x45" alt=""> Flappy Bird</td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star-half-o "></span>
+						            <span class="fa fa-star-o "></span>
+					            </td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star-o "></span>
+					            </td>
+					          </tr>
+					          <tr>
+					          	<td>3</td>
+					            <td><img src="http://placehold.it/45x45" alt=""> Diablo III</td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star-o "></span>
+					            </td>
+					            <td>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star "></span>
+						            <span class="fa fa-star-o "></span>
+					            </td>
+					          </tr>
+					        </tbody>
+				        </table>
+					</div>
+
+				</div><!-- .col-xs-12 -->
 			</div>
 
-		</a>
-	</div>
-</div>
+		</div>
 
+	</div><!-- .row -->
+
+</div><!-- .container-fluid -->
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="js/vendor/owlcarousel/owl.carousel.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 </body>
