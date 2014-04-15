@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Istim | Statistics</title>
+    <title>Istim | My Games</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,7 +30,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Istim &trade;</a>
+            <a class="navbar-brand" href="index.html">Istim  &trade;</a>
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
@@ -48,10 +48,9 @@
                 <li><a href="#">News</a></li>
                 <li><a href="statistics.html">Statistics</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="addfriend.html">Add friend</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="fa icon fa-user"></span>Profile</a></li>
+                <li><a href="profile.html"><span class="fa icon fa-user"></span>Profile</a></li>
                 <li><a href="#"><span class="fa icon fa-sign-out"></span>Sign out</a></li>
             </ul>
         </div>
@@ -70,7 +69,7 @@
         <img src="http://imgs-srzd.s3.amazonaws.com/srzd/upload/l/e/leleks.jpg" alt="" class="game-icon"/>
 
           <div class = "game-list-title">
-            Joguim dos Leleks 2 - Lesk's Revenge
+            <a href="game_show.html"> Joguim dos Leleks 2 - Lesk's Revenge</a>
           </div>
           <div class = "game-list-stars pull-right">
             <span class="fa fa-star "></span>
@@ -115,34 +114,71 @@
           </div>
         </div>
 
-        <div class="col-xs-9">
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="panel panel-default">
-                          <div class="panel-heading">
-                                <h3 class="panel-title">Most Popular Games</h3>
-                          </div>
-                          <div class="panel-body">
-                                <canvas id="canvas_most" height="450" width="505"></canvas>
-                          </div>
-                    </div>
-                </div><!-- .col-xs-6 -->
-                <div class="col-xs-6">
-                    <div class="panel panel-default">
-                          <div class="panel-heading">
-                                <h3 class="panel-title">Least Popular Games</h3>
-                          </div>
-                          <div class="panel-body">
-                                <canvas id="canvas_least" height="450" width="505"></canvas>
-                          </div>
-                    </div>
-                </div><!-- .col-xs-6 -->
-            </div><!-- .row -->
-        </div><!-- .col-xs-9 -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/Chart.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+        <div class="panel panel-default achievement not-done">
+           <div class="panel-body">
+             <img src="http://www.opresente.com.br/media/webmedia/files/lek_1.jpg" />
+             <div class="achievement-text">
+               <h4>
+                 No passinho do volante
+               </h4>
+               <p>
+                 Quero ver o baile todo
+               </p>
+             </div>
+           </div>
+         </div>
+
+         <div class="panel panel-default achievement not-done">
+            <div class="panel-body">
+              <img src="http://www.opresente.com.br/media/webmedia/files/lek_1.jpg" />
+              <div class="achievement-text">
+                <h4>
+                  No passinho do volante
+                </h4>
+                <p>
+                  Quero ver o baile todo
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="panel panel-default games-panel">
+      <div class="panel-body">
+        <img src="http://www.pavablog.com/wp-content/uploads/2013/02/405956-802x495.jpg" alt="" class="game-icon"/>
+
+          <div class = "game-list-title">
+            <a href="game_show.html"> Joguim dos Leleks 3 - Lesk's Horizon</a>
+          </div>
+          <div class = "game-list-stars pull-right">
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+          </div>
+
+          <p>
+            A nova aventura lelek se aproxima!
+          </p>
+
+        <p class="list-group-item-text">
+          <span class="fa icon far-left fa-play-circle-o "></span> <a href="#" >Jogar</a>
+          <span class="fa icon fa-comments "></span><a href="#" >Comentários</a>
+          <span class="fa icon fa-pencil "></span><a href="#" >Escrever Review</a>
+          <span class="hidden-xs">
+            <span class="fa icon fa-trophy "></span><a href="#" >Minhas conquistas</a>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
