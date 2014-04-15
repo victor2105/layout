@@ -391,6 +391,7 @@ blockquote.game-review{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .title-add-coins{
  text-align: center;
 }
@@ -424,8 +425,12 @@ blockquote.game-review{
 
 #form-payment legend {  
   text-align: center;
-=======
 }
+#items-trade td{
+  vertical-align: middle;
+  text-align: center;
+}
+
 .store-sale-item {
     padding: 1em;
 }
@@ -436,5 +441,4 @@ blockquote.game-review{
 
 .store-sale-item .btn-white {
     border-color: white;
->>>>>>> 54645eb1cc9b9c103064c1967f8b856480f97992
 }
