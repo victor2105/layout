@@ -18,8 +18,10 @@ $('#items-table .item').each(function() {
   var name = $(this).find('img').data('name');
   var description = $(this).find('img').data('description');
   var value = $(this).find('img').data('value');
-  var qtd = ($(this).find('img').data('selling')) ? ' ' + $(this).find('img').data('selling') : '';
-  name += ($(this).hasClass('forsale')) ? ' <span class="badge">selling' + qtd + '</span>' : '';
+  var qtd_selling = ($(this).find('img').data('selling')) ? ' ' + $(this).find('img').data('selling') : '';
+  name += ($(this).hasClass('forsale')) ? ' <span class="badge">selling' + qtd_selling + '</span>' : '';
+  var qtd_trading = ($(this).find('img').data('trading')) ? ' ' + $(this).find('img').data('trading') : '';
+  name += ($(this).hasClass('fortrade')) ? ' <span class="badge">trading' + qtd_trading + '</span>' : '';
 
   $(this).find('.item-tip').popover({
     title: '<strong>' + name + '</strong>',
@@ -32,4 +34,18 @@ $('#items-table .item').each(function() {
   $(this).find('.item-tip').click(function() {
     $('#modal-details').modal('show');
   });
+});
+
+
+$(document).ready(function() {
+
+  $(".store-sale").owlCarousel({
+
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+
+  });
+
 });

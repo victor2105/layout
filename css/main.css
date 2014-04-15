@@ -315,6 +315,23 @@ p.game-description{
     padding-top:1em;
 }
 
+.panel-developers {
+  margin-top: 1em;
+}
+
+span.developers {
+  float: right;
+}
+
+span.copyright {
+  font-size: 12px;
+}
+
+span.legal {
+  font-size: 12px;
+  float: right;
+}
+
 .price{
     color: #0ba854;
     font-weight: bold;
@@ -373,6 +390,7 @@ blockquote.game-review{
     margin-right: 1em;
 }
 
+<<<<<<< HEAD
 .title-add-coins{
  text-align: center;
 }
@@ -406,4 +424,17 @@ blockquote.game-review{
 
 #form-payment legend {  
   text-align: center;
+=======
+}
+.store-sale-item {
+    padding: 1em;
+}
+
+.store-sale-item h1 {
+    margin-top: 0;
+}
+
+.store-sale-item .btn-white {
+    border-color: white;
+>>>>>>> 54645eb1cc9b9c103064c1967f8b856480f97992
 }
