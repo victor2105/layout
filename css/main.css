@@ -402,3 +402,8 @@ blockquote.game-review{
 .store-sale-item .btn-white {
     border-color: white;
 }
+
+#modal-details .quantity {
+    display: inline-block;
+    width: 120px;
+}
