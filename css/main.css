@@ -361,3 +361,10 @@ blockquote.game-review{
     text-align: center;
     margin: 0 auto;
 }
+#topgames td {
+    vertical-align: middle;
+}
+
+#topgames td img {
+    margin-right: 1em;
+}
