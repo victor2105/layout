@@ -368,3 +368,8 @@ blockquote.game-review{
 #topgames td img {
     margin-right: 1em;
 }
+
+#items-trade td{
+  vertical-align: middle;
+  text-align: center;
+}
