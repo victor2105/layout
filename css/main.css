@@ -398,10 +398,6 @@ blockquote.game-review{
     border-color: white;
 }
 
-#selling-items-table tbody tr {
-    cursor: pointer;
-}
-
 #modal-details .quantity {
     display: inline-block;
     width: 120px;

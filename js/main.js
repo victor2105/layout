@@ -36,7 +36,7 @@ $('#items-table .item').each(function() {
   });
 });
 
-$('#selling-items-table tbody tr').click(function() {
+$('#selling-items-table tbody tr input').click(function() {
   $('#modal-details').modal('show');
 });
 
