@@ -10,6 +10,10 @@ body{
     color: yellow;
 }
 
+.color-green {
+  color: green;
+}
+
 /* sign up modal style*/
 .signup-modal-content{
     height: 430px;
@@ -386,6 +390,42 @@ blockquote.game-review{
     margin-right: 1em;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+.title-add-coins{
+ text-align: center;
+}
+
+#list-coin{
+  height: 65px;
+}
+
+#val-heading {
+  line-height: 45px;
+}
+
+.list-group-item-heading {
+  vertical-align: center;
+}
+
+#min-val{
+  font-size: 13px;
+  margin-top: -0.3em;
+}
+
+#well-coin{
+  height: 38px;
+  margin-top: 0.25em;
+  line-height: 20px;
+}
+
+#tabela-add-coin{
+  border-radius: 5px;
+}
+
+#form-payment legend {  
+  text-align: center;
+}
 #items-trade td{
   vertical-align: middle;
   text-align: center;
