@@ -1,0 +1,13 @@
+dashboard
+developérs
+forgot_password
+friends
+game_show
+guides
+my_items_for_sale
+my_items_for_trade
+sell_items
+signin
+signup
+statistics
+trade_item
