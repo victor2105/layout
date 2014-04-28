@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Istim | Sign Up</title>
+	<title>Istim | Sign In</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -61,7 +61,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="#">Istim  &#8482</a>
+		<a class="navbar-brand" href="#">Istim  &trade;</a>
 	</div>
 	<div class="navbar-collapse collapse navbar-responsive-collapse">
 		<ul class="nav navbar-nav">
@@ -108,17 +108,17 @@
 </div>
 <!-- end Navbar -->
 
-<div class="container-fluid">
+<div class="container-fluid centralize-margin">
     <div class="row">
         <div class="col-xs-6 col-xs-offset-3">
             <div class="jumbotron signup-page-form-hero">
-                <form class="form-horizontal">
+                <form class="form-horizontal" method="post" action="index.html">
                     <fieldset class="login-popup">
                         <div class="col-xs-12 no-padding-left no-padding-right">
                             <legend>
                                 <div class="alert alert-warning text-center">
                                     <h2 class="no-margin">
-                                        Sign Up
+                                        Istim&#8482
                                     </h2>
                                 </div>
                             </legend>
@@ -126,37 +126,16 @@
                         <div class="form-group">
                             <div class="col-xs-12">
                                 <div class="form-group">
-                                    <label class="col-xs-3 control-label" for="firstName">First name: </label>
-                                    <div class="col-xs-9">
-                                        <input class="form-control" type="text" for="firstName">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-xs-3 control-label" for="lastName">Last name: </label>
-                                    <div class="col-xs-9">
-                                        <input class="form-control" type="text" for="lastName">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-xs-3 control-label" for="email">Email: </label>
-                                    <div class="col-xs-9">
-                                        <input class="form-control" type="email" for="email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-xs-3 control-label" for="email">Password: </label>
-                                    <div class="col-xs-9">
-                                        <input class="form-control" type="password" for="password">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-xs-3 control-label" for="password_confirmation">Confirm password: </label>
-                                    <div class="col-xs-9">
-                                        <input class="form-control" type="password" for="password_confirmation">
+                                    <div class="col-xs-12">
+                                        <input class="form-control" type="email" for="email" placeholder="email" required>
+                                        <input class="form-control" type="password" for="password" placeholder="password" required>
+
+
+                                        <span class="pull-left"><a href="forgot_password.html">Forgot password?</a></span>
                                     </div>
                                 </div>
                                 <div class="form-group col-xs-6 pull-right">
-                                    <input type="button" class="btn btn-success signup-page-button" value="Sign up">
+                                    <input type="submit" class="btn btn-success col-xs-12" value="Sign In">
                                 </div>
                             </div>
                         </div>

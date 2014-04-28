@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Istim | About</title>
+  <title>Istim - Dashboard</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,6 +50,43 @@
 </div>
 <!-- End Sign Up Modal -->
 
+<<<<<<< HEAD
+        <!-- Add your site or application content here -->
+        <div class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Istim Games &#8482</a>
+          </div>
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+              
+              <li><a href="#">Games</a></li>
+              <li><a href="#">News</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+              <li><a href="#">About</a></li>              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="fa icon fa-user"></span>Profile</a></li>
+              <li><a href="#"><span class="fa icon fa-sign-out"></span>Sign out</a></li>
+          </div>
+        </div>
+          
+          <div class="col-xs-3">
+            <div class="list-group">
+              <a href="#" class="list-group-item">
+                <div class="row">
+                  <div class="col-xs-4">
+                    <img class="img-responsive" src="http://placehold.it/200x200">
+                  </div>
+                  <div class="col-xs-8">
+                    <h4 class="list-group-item-heading">Nome do Jogador</h4>
+                    <p class="list-group-item-text">
+                      Moedas: <span class="color-yellow"><i class="fa fa-bitcoin"></i> 131231</span>
+                    </p>
 
 
 <!-- Add your site or application content here -->
@@ -60,24 +97,14 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.html">Istim  &trade;</a>
+    <a class="navbar-brand" href="#">Istim</a>
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
-        <li><a href="games.html">My Games</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Cash<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Recharge</a></li>
-                <li><a href="transfer.html">Transfer</a></li>
-                <li><a href="#">Transfer History</a></li>
-                <li><a href="rechargehistory.html">Recharge History</a></li>
-            </ul>
-        </li>
-        <li><a href="buy_games.html">Buy Games</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="statistics.html">Statistics</a></li>
-        <li><a href="about.html">About</a></li>
+
+      <li><a href="#">Games</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">About</a></li>              
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
@@ -116,22 +143,6 @@
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-
-<div class="jumbotron">
-  <h1>Istim  &trade;</h1>
-  <p>Plataforma Web de compartilhamento de jogos, desafios, com diversos jogos disponíveis, contando também com uma plataforma com caracteristicas de redes sociais, desafiando seus amigos com a pontuação e archievements ganhos.</p>
-    <h2>Colaboradores</h2>
-        Review:
-        <ul>
-        <li>Wendell Oliveira</li>
-        <li>Victor Henrique</li>
-        <li>Isaac Newton</li>
-        </ul>
-        Friends:
-        <ul>
-        <li>Gabriel Alves</li>
-        </ul>
-</div>
 
 </body>
 </html>
