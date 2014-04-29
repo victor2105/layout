@@ -1,0 +1,31 @@
+developérs
+friends
+game_show
+guides
+signin
+signup
+statistics
+trade_item
+wish_list
+
+
+
+developers: na pagina de lista de jogos
+forgot_password: na pagina de login
+friends: na barra lateral
+game_show: na pagina de lista de jogos
+guides: na pagina de lista de jogos e na game_show
+sell_items: no modal da pagina profile
+signin: apenas a partir da pagina de forgot_password e sign_up
+signup: apenas a partir da pagina de signin
+statistics: na pagina de lista de jogos
+trade_item: não sei
+
+
+
+
+
+
+
+
+
