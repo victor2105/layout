@@ -15,6 +15,19 @@
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" >
   <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript">       
+        function buttonclickTrade(){
+            window.location="./my_items_for_trade.html";
+        }
+    </script>
+    <script type="text/javascript">       
+        function buttonclickSale(){
+            window.location="./my_items_for_sale.html";
+        }
+    </script>
+    
+    
+    
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -35,7 +48,9 @@
               <h4 class="list-group-item-heading">Nome do Jogador</h4>
               <p class="list-group-item-text">
                 Moedas: <span class="color-yellow"><i class="fa fa-bitcoin"></i> 131231</span>
+                  
               </p>
+                
             </div>
           </div>
 
@@ -66,25 +81,26 @@
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
-        <li><a href="games.html">My Games</a></li>
+        <li><a href="games.html">Meus Jogos</a></li>
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Cash<b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Minhas Moedas<b class="caret"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="#">Recharge</a></li>
-                <li><a href="transfer.html">Transfer</a></li>
-                <li><a href="#">Transfer History</a></li>
-                <li><a href="rechargehistory.html">Recharge History</a></li>
+                <li><a href="add_coins.html">Recarregar</a></li>
+                <li><a href="transfer.html">Transferencia</a></li>
+                <li><a href="#">Historico de Transferencia</a></li>
+                <li><a href="rechargehistory.html">Historico de Recarga</a></li>
             </ul>
         </li>
-        <li><a href="buy_games.html">Buy Games</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="statistics.html">Statistics</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="addfriend.html">Add friend</a></li>
+        <li><a href="buy_games.html">Comprar Jogos</a></li>
+        <li><a href="news.html">Noticias</a></li>
+        <li><a href="trade_item.html">Mercado de Item</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="addfriend.html">Adicionar Amigos</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="profile.html"><span class="fa icon fa-user"></span>Profile</a></li>
-      <li><a href="#"><span class="fa icon fa-sign-out"></span>Sign out</a></li>
+      <li><a href="perfil.html"><span class="fa icon fa-user"></span>Perfil</a></li>
+      <li><a href="#"><span class="fa icon fa-sign-out"></span>Sair</a></li>
     </ul>
   </div>
 </div>
@@ -107,7 +123,9 @@
       <div class="row">
         <div class="col-xs-4 pull-right">
           <a href="edit_profile.html">edit profile</a>
+            
         </div>
+          <a href="friends.html">Amigos</a>
       </div>
     </div>
   </div>
@@ -120,6 +138,7 @@
       <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">Player Items</h3>
+            <a href="sell_items.html" class="item-venda">Itens à Venda</a>  
           </div>
           <table id="items-table" class="table">
             <tr>
@@ -284,8 +303,9 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Trade Item</button>
-        <button type="button" class="btn btn-primary">Sell Item</button>
+         <button type="button" class="btn btn-primary" onclick="buttonclickTrade()">Trade Item</button> 
+        <!--  <input type="button" class="btn btn-primary" value="ClickMe" onclick="buttonclick()" />  -->
+        <button type="button" class="btn btn-primary" onclick="buttonclickSale()">Sell Item</button>
       </div>
     </div>
   </div>
@@ -300,5 +320,6 @@
 <script src="js/plugins.js"></script>
 <script src="js/Chart.js"></script>
 <script src="js/main.js"></script>
+<script src="js/click.js"></script>
 </body>
 </html>
