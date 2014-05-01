@@ -17,107 +17,15 @@
 </head>
 <body>
 
-  <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content signup-modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
-        </div>
-        <div class="modal-body signup-modal-body">
-          <form class="form-horizontal">
-            <fieldset class="login-popup">
-              <div class="form-group">
-                <div class="col-xs-12">
-                  <input class="form-control" type="text" for="firstName" placeholder="First name">
-                  <input class="form-control" type="text" for="lastName" placeholder="Last name">
-                  <input class="form-control" type="date" for="birthDate" placeholder="Birth date">
-                  <input class="form-control" type="email" for="email" placeholder="Email">
-                  <input class="form-control" type="password" for="password" placeholder="Password">
-                  <input class="form-control" type="password" for="password_confirmation" placeholder="Confirm password">
-                </div>
-              </div>
-            </fieldset>
-            <input type="submit" class="btn btn-success col-xs-12" value="Sign Up">
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Add your site or application content here -->
-  <div class="navbar navbar-default">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-       <a class="navbar-brand" href="index.html">Istim  &trade;</a>
-  </div>
-  <div class="navbar-collapse collapse navbar-responsive-collapse">
-    <ul class="nav navbar-nav">
-        <li><a href="games.html">Meus Jogos</a></li>
-       <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Minhas Moedas<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                <li><a href="add_coins.html">Recarregar</a></li>
-                <li><a href="transfer.html">Transferencia</a></li>
-                <li><a href="#">Historico de Transferencia</a></li>
-                <li><a href="rechargehistory.html">Historico de Recarga</a></li>
-            </ul>
-        </li>
-        <li><a href="buy_games.html">Comprar Jogos</a></li>
-        <li><a href="news.html">Noticias</a></li>
-        <li><a href="trade_item.html">Mercado de Item</a></li>
-        <li><a href="about.html">Sobre</a></li>
-        <li><a href="addfriend.html">Adicionar Amigos</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="perfil.html"><span class="fa icon fa-user"></span>Perfil</a></li>
-                <li><a href="#"><span class="fa icon fa-sign-out"></span>Sair</a></li>
-            </ul>
-        </div>
-    </div>
-
-  <!--Left Lateral Bar-->
+  <partial data-template="navbar_public"></partial>
+  <partial data-template="sign_up_modal"></partial>
 
   <div class="container-fluid">
 
 
     <div class="row">
       <div class="col-xs-3">
-        <div class="list-group">
-          <a href="#" class="list-group-item">
-            <div class="row">
-              <div class="col-xs-4">
-                <img class="img-responsive" src="http://placehold.it/200x200">
-              </div>
-              <div class="col-xs-8">
-                <h4 class="list-group-item-heading">Nome do Jogador</h4>
-                <p class="list-group-item-text">
-                  Moedas: <span class="color-yellow"><i class="fa fa-bitcoin"></i> 131231</span>
-                </p>
-              </div>
-            </div>
-
-          </a>
-        </div>
-
-        <div id="div1" class="list-group">
-
-          <a id="a1" href="#" class="list-group-item">
-            Mario da burrinha <span class="fa icon fa-user pull-right color-green"></span>
-          </a>
-          <a href="#" class="list-group-item">
-            Victor Henrique <span class="fa icon fa-user pull-right"></span>
-          </a>
-          <a href="#" class="list-group-item">
-            ninguem <span class="fa icon fa-user pull-right"></span>
-          </a>
-
-        </div>
+        <partial data-template="sidebar"></partial>
       </div>
 
       <div class="col-xs-9">
@@ -145,56 +53,8 @@
             </div>
           </div>
       </div>
-
     </div><!-- .row -->
-
   </div><!-- .container-fluid -->
-
-
-  <div id="box" class="chat-box">
-    <input type="checkbox" />
-    <label data-expanded="Close Chatbox" data-collapsed="Open Chatbox"></label>
-    <div class="chat-box-content">
-
-      <div id="chatScreen" class="well well-lg chat-screen" >
-
-      </div>
-
-      <div class="form-group">
-        <label class="control-label">Input addons</label>
-        <div class="input-group" style="width: 100%;">
-          <input onkeydown="buttonEnterPressed()" id="textarea" type="text" class="form-control">
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <script>
-  var x = "#box";
-  $(x).hide();
-
-  $("#a1").click(function(){
-    $("#box").show();
-  });
-
-  function message()
-  {
-    document.getElementById("chatScreen").innerHTML += "<br>" +  document.getElementById("textarea").value;
-    document.getElementById("textarea").value = "";
-    document.getElementById("chatScreen").scrollTop = document.getElementById("chatScreen").scrollHeight;
-  }
-
-  function buttonEnterPressed(){
-    if (event.keyCode == 13) {
-      this.message();
-      return false;
-    }else if(event.keyCode == 27){
-      $(x).hide();
-    }
-  }
-  </script>
 
   <!-- End Sign Up Modal -->
 

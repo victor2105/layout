@@ -16,45 +16,8 @@
 	  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div class="navbar navbar-default">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Istim  &trade;</a>
-  </div>
-  <div class="navbar-collapse collapse navbar-responsive-collapse">
-    <ul class="nav navbar-nav">
-        <li><a href="games.html">Meus Jogos</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Minhas Moedas<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                <li><a href="add_coins.html">Recarregar</a></li>
-                <li><a href="transfer.html">Transferencia</a></li>
-                <li><a href="#">Historico de Transferencia</a></li>
-                <li><a href="rechargehistory.html">Historico de Recarga</a></li>
-            </ul>
-        </li>
-        <li><a href="buy_games.html">Comprar Jogos</a></li>
-        <li><a href="news.html">Noticias</a></li>
-        <li><a href="trade_item.html">Mercado de Item</a></li>
-        <li><a href="about.html">Sobre</a></li>
-        <li><a href="addfriend.html">Adicionar Amigos</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        </ul>
-    <ul class="nav navbar-nav navbar-right">
-        <li><a href="perfil.html"><span class="fa icon fa-user"></span>Perfil</a></li>
-        <li><a href="#"><span class="fa icon fa-sign-out"></span>Sair</a></li>
-    </ul>
-</div>
-</div>
+  <partial data-template="navbar_authenticated"></partial>
+  <partial data-template="friend_list_chat"></partial>
 
 <div class="container">
     <div class="col-md-4 col-md-offset-4 search-field">
