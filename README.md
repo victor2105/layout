@@ -1,42 +1,54 @@
-# [Istim Layout]
+# Boilerplate
 
-## Criando seu fork e enviando pull requests
+A professional front-end template for building bootstrap web apps or sites.
 
-Siga o passo a passo abaixo e repita os passos 5 a 12 para cada novo Pull Request.
+* Source: [https://github.com/lucasfercunha/boilerplate](https://github.com/lucasfercunha/boilerplate)
+* Homepage: [http://lucasfercunha.com/boilerplate](http://lucasfercunha.com/boilerplate)
+* Facebook: [http://fb.me/lucasfercunha](http://fb.me/lucasfercunha)
 
-1. Crie um fork do repositório [istim/layout](https://github.com/istim/layout/).
+## Requirements
 
-2. Clone seu fork (_usuario/layout_) no seu computador utilizando ```git clone```.
+* [NodeJS](http://nodejs.org) with npm
+* [Bower](http://bower.io): run ```npm install -g bower```
+* [GulpJS](http://gulpjs.com): run ```npm install -g gulp```
 
-3. Faça as alterações localmente, e quando estiver tudo certo dê commit com ```git commit``` no branch master e envie as alterações para o github com ```git push origin master```.
+## Quick Start
 
-5. Antes de criar um pull request, é recomendado que você faça um pull das alterações que já estão no repositório principal (_istim/layout_) para evitar problemas de merge. Para isso efetue os seguintes comandos:
+1. Clone the git repository ```git clone https://github.com/lucasfercunha/boilerplate.git```
+2. Enter the project folder ```cd boilerplate```
+3. Install node dependencies ```npm install```
+4. Install front-end dependencies ```bower install```
+5. **Start developing**
 
-    1. ```git checkout -b istim-layout-master```
+## Gulp Tasks
 
-    2. ```git pull https://github.com/istim/layout.git master```
+```gulp dev``` - Compile CoffeeScript (application/scripts/src) to Javascript, compile SASS (application/css/src) to CSS, compress your images (application/img/src), starts a server and watch for changes.
 
-6. Nesse momento, se houver conflitos de merge você verá a seguinte mensagem: _Automatic merge failed; fix conflicts and then commit the result_, e antes disso: _CONFLICT (content): Merge conflict in nomeDoArquivo_.
+```gulp coffee:compile``` - Compile [CoffeeScript](http://coffeescript.org) from folder _application/scripts/src_.
 
-7. Pode haver mais de uma mensagem especificando arquivos com problemas no merge. Abra cada um deles e resolva os conflitos. Os conflitos são exibidos da seguinte forma:
+```gulp images:compress``` - Compress Images from folder _application/images/src_.
 
-    1. ```<<<<<<<<<<<<< HEAD```
+```gulp sass:compile``` - Compile [SASS](http://sass-lang.com) from folder _application/styles/src_.
 
-    2. ```// seu código + suas alterações```
+## Application Directory
 
-    3. ```===============  ```
+```
+boilerplate
+    |- application
+    |----- images       # compressed images (or images you don't want to compress)
+    |----- scripts      # compiled coffeescript (or vanilla javascript)
+    |----- styles       # compiled sass (or vanilla css)
+    |- assets
+    |----- images       # images to be compressed
+    |----- scripts      # coffescript to be compiled
+    |----- styles       # scss files to be compiled
+```
 
-    4. ```// codigo do repo principal```
+## Features
 
-    5. ```>>>>>>>>>>>>> ID DO COMMIT```
-
-8. Você deve escolher qual código deve permanecer no repositório e qual deve sair. Lembre-se que isso será avaliado pelos outros grupos.
-
-9. Depois você deve commitar as resoluções de conflit o com ```git commit```.
-
-10. Agora você pode retornar para seu código, digitando ```git checkout master```. E juntar os dois códigos utilizando ```git merge istim-layout-master```.
-
-11. Pode ser que ocorra algum conflito novamente, apenas repitas os passos 6 a 9.
-
-12. Do lado direito do seu repositorio no github, clique em **Pull Requests [0]**, clique em **New Pull Request** (botão verde). Confira as alterações e clique em **Create Pull Request** (botão verde). Dê um titulo e uma descrição para o pull request (tente se bem específico) e confirme a criação clicando em **Send Pull Request**.
-
+* HTML5 Ready. Use new elements with confidence.
+* Cross-browser compatible (Chrome, Firefox, IE8+, Opera, Safari).
+* Includes the latest [jQuery](http://jquery.com/).
+* The latest Modernizr build for feature detection.
+* Includes the latest [Bootstrap](http://getbootstrap.com) and [Bootswatch Themes](http://bootswatch.com)
+* Glyphicons and FontAwesome
