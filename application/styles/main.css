@@ -2,6 +2,11 @@ body{
 	padding-bottom: 40px; /*Espaçamento para o friend list button*/
 }
 
+.container-fluid {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .table-centered td {
 	vertical-align: middle !important;
 }
