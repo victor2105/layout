@@ -14,11 +14,9 @@ A professional front-end template for building bootstrap web apps or sites.
 
 ## Quick Start
 
-1. Clone the git repository ```git clone https://github.com/lucasfercunha/boilerplate.git```
-2. Enter the project folder ```cd boilerplate```
-3. Install node dependencies ```npm install```
-4. Install front-end dependencies ```bower install```
-5. **Start developing**
+1. Install node dependencies ```npm install```
+2. Install front-end dependencies ```bower install```
+3. **Start developing**
 
 ## Gulp Tasks
 
