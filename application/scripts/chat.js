@@ -2,7 +2,7 @@
   var x = "#box";
   $(x).hide();
 
-  $("#x").click(function(){
+  $(".friend-chat").click(function(){
     $("#box").show();
   });
 
