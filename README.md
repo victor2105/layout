@@ -1,22 +1,26 @@
 # Boilerplate
 
-A professional front-end template for building bootstrap web apps or sites.
+## Passo a passo
 
-* Source: [https://github.com/lucasfercunha/boilerplate](https://github.com/lucasfercunha/boilerplate)
-* Homepage: [http://lucasfercunha.com/boilerplate](http://lucasfercunha.com/boilerplate)
-* Facebook: [http://fb.me/lucasfercunha](http://fb.me/lucasfercunha)
+1. Instalar o [NodeJS](http://nodejs.org).
+2. Instalar o [Bower](http://bower.io): ```npm install -g bower```
+3. Instalar o [GulpJS](http://gulpjs.com): ```npm install -g gulp```
+4. Instalar as [dependências do NodeJS](https://github.com/istim/layout/blob/master/package.json): ```npm install```
+5. Instalar as [dependências do Bower](https://github.com/istim/layout/blob/master/bower.json): ```bower install```
+6. Rodar ```gulp dev``` e começar a desenvolver.
+7. Acessar os arquivos através da URL [http://localhost:6147](http://localhost:6147)
 
-## Requirements
+## Problemas na UFRN
 
-* [NodeJS](http://nodejs.org) with npm
-* [Bower](http://bower.io): run ```npm install -g bower```
-* [GulpJS](http://gulpjs.com): run ```npm install -g gulp```
+* Na UFRN os computadores não tem o NodeJS instalado, então de preferência use um notebook ou uma máquina virtual.
+* Utilizando a rede da UFRN ao rodar o ```bower install``` ele tenta instalar algumas dependências utilizando a porta 22, que é bloqueado na UFRN. Existem duas soluções:
+    * Baixar os [arquivos do bower](https://anonfiles.com/file/585c8570bf5db4a71ba828965a9ba9ea) e colocar a pasta *bower_components* dentro da pasta *application*
+    * Rodar o seguinte comando antes do bower install git config --global url."https://".insteadOf "git://"
 
-## Quick Start
+# ATENÇÃO
 
-1. Install node dependencies ```npm install```
-2. Install front-end dependencies ```bower install```
-3. **Start developing**
+Colocar os assets na pasta assets, nunca diretamente na pasta application, senão eles serão sobreescritos pelo gulp. Se você tiver usando um computador da UFRN e não tiver o GulpJS. No próximo PR vou apagar a pasta assets para não haver esse problema.
+
 
 ## Gulp Tasks
 
@@ -41,12 +45,3 @@ boilerplate
     |----- scripts      # coffescript to be compiled
     |----- styles       # scss files to be compiled
 ```
-
-## Features
-
-* HTML5 Ready. Use new elements with confidence.
-* Cross-browser compatible (Chrome, Firefox, IE8+, Opera, Safari).
-* Includes the latest [jQuery](http://jquery.com/).
-* The latest Modernizr build for feature detection.
-* Includes the latest [Bootstrap](http://getbootstrap.com) and [Bootswatch Themes](http://bootswatch.com)
-* Glyphicons and FontAwesome
