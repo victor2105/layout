@@ -176,6 +176,10 @@ body{
 	line-height: 1.4em;
 }
 
+.coins-panel{
+	line-height: 1.4em;
+}
+
 .achievements-list {
 	margin-top: 2em;
 }
@@ -407,6 +411,18 @@ blockquote.game-review{
  text-align: center;
 }
 
+.add-coins-list-title{
+	display: inline;
+	font-size: 1.8em;
+	margin-right: 0.8em;
+	font-weight: bold;
+}
+.add-coins-button{
+	display: inline;
+	float: right;
+	vertical-align: ;
+}
+
 #list-coin{
   height: 65px;
 }
@@ -420,7 +436,8 @@ blockquote.game-review{
 }
 
 #min-val{
-  font-size: 13px;
+  font-weight: normal;
+  font-size: 14px;
   margin-top: -0.3em;
 }
 
