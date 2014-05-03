@@ -126,6 +126,19 @@ body{
 	padding-bottom: 1em;
 }
 
+.game-actions {
+	padding: 0em;
+	padding-top: 0.5em;
+}
+
+ul.game-actions {
+	list-style: none;
+}
+
+ul.game-actions li {
+	display: inline-block;
+}
+
 .game-list .game-text{
 	height: 112px;
 	padding-left: 1em;
