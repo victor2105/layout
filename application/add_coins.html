@@ -18,70 +18,76 @@
 <body>
   <partial data-template="navbar_authenticated"></partial>
   <partial data-template="friend_list_chat"></partial>
-  <div class="col-xs-3">
+  <div class="col-sm-3">
     <partial data-template="sidebar"></partial>
   </div>
 
-  <div class="col-xs-5">
+  <div class="col-sm-5">
     <div class="title-add-coins">
       <h1>Adicionar Coins à sua Conta Istim</h1>
       <p class = "opa">Fundos na sua Carteira Istim podem ser usados na compra de qualquer jogo no Istim ou em transações com outros jogadores.</p>
     </div>
-
-    <div class="list-group">
-      <a href="#" class="list-group-item" id="list-coin">
-        <h2 class="list-group-item-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 1.000</span> <span class="color-green">(R$ 10,00)</span>
-
-          <div class="pull-right col-xs-4.5">
-            <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-              ADICIONAR COINS
-            </button>
-          </div>
-        </h2>
-
-        <p class="list-group-item-text" id="min-val">Valor mínimo de coins</p>
-      </a>
-
-      <a href="#" class="list-group-item" id="list-coin">
-        <h2 class="list-group-item-heading" id="val-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 2.000</span> <span class="color-green">(R$ 20,00)</span>
-          <div class="pull-right col-xs-4.5">
-            <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-              ADICIONAR COINS
-            </button>
-          </div>
-        </h2>
-      </a>
-
-      <a href="#" class="list-group-item" id="list-coin">
-        <h2 class="list-group-item-heading" id="val-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 5.000</span> <span class="color-green">(R$ 50,00)</span>
-          <div class="pull-right col-xs-4.5">
-            <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-              ADICIONAR COINS
-            </button>
-          </div>
-        </h2>
-      </a>
-      <a href="#" class="list-group-item" id="list-coin">
-        <h2 class="list-group-item-heading" id="val-heading">Adicionar R$ <span class="color-yellow"><i class="fa fa-bitcoin"></i> 10.000</span> <span class="color-green">(R$ 100,00)</span>
-          <div class="pull-right col-xs-4.5">
-            <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-              ADICIONAR COINS
-            </button>
-          </div>
-        </h2>
-      </h2>
-    </a>
-    <a href="#" class="list-group-item" id="list-coin">
-      <h2 class="list-group-item-heading" id="val-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 15.000</span> <span class="color-green">(R$ 150,00)</span>
-        <div class="pull-right col-xs-4.5">
-          <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-            ADICIONAR COINS
-          </button>
+      <div class="panel panel-default coins-panel">
+        <div class="panel-body">
+            <div class="add-coins-list-title">
+              Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 1.000</span> <span class="color-green">(R$ 10,00)</span>
+                  <div class="add-coins-button">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                      ADICIONAR
+                    </button>
+                  </div>  
+            </div>
+              <p></p>
+              <p class="list-group-item-text" id="min-val">Valor mínimo de coins</p>
         </div>
-      </h2>
-    </h2>
-  </a>
-</div>
+      </div>
+      <div class="panel panel-default coins-panel">
+        <div class="panel-body">
+            <div class="add-coins-list-title">
+              Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 2.000</span> <span class="color-green">(R$ 20,00)</span>
+                  <div class="add-coins-button">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                      ADICIONAR
+                    </button>
+                  </div>
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-default coins-panel">
+        <div class="panel-body">
+            <div class="add-coins-list-title">
+              Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 5.000</span> <span class="color-green">(R$ 50,00)</span>
+                  <div class="add-coins-button">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                      ADICIONAR
+                    </button>
+                  </div>  
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-default coins-panel">
+        <div class="panel-body">
+            <div class="add-coins-list-title">
+              Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 10.000</span> <span class="color-green">(R$ 100,00)</span>
+                  <div class="add-coins-button">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                      ADICIONAR
+                    </button>
+                  </div>  
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-default coins-panel">
+        <div class="panel-body">
+            <div class="add-coins-list-title">
+              Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 20.000</span> <span class="color-green">(R$ 200,00)</span>
+                  <div class="add-coins-button">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                      ADICIONAR
+                    </button>
+                  </div>  
+            </div>
+        </div>
 </div>
 
 <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -116,7 +122,7 @@
                 <input type="date" class="form-control">
               </div>
               <label for="numero" class="col-lg-3 control-label">Código de Segurança:</label>
-              <div class="col-lg-2">
+              <div class="col-lg-3">
                 <input type="tel" class="form-control">
               </div>
             </div>
@@ -148,7 +154,7 @@
             </div>
             <br>
             <div class="form-group">
-              <div class="col-lg-10 col-lg-offset-9">
+              <div class="col-lg-10 col-lg-offset-8">
                 <button class="btn btn-default">Cancelar</button>
                 <button type="submit" class="btn btn-success">Enviar</button>
               </div>
