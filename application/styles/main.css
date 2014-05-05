@@ -126,19 +126,6 @@ body{
 	padding-bottom: 1em;
 }
 
-.game-actions {
-	padding: 0em;
-	padding-top: 0.5em;
-}
-
-ul.game-actions {
-	list-style: none;
-}
-
-ul.game-actions li {
-	display: inline-block;
-}
-
 .game-list .game-text{
 	height: 112px;
 	padding-left: 1em;
@@ -186,10 +173,6 @@ ul.game-actions li {
 }
 
 .games-panel{
-	line-height: 1.4em;
-}
-
-.coins-panel{
 	line-height: 1.4em;
 }
 
@@ -424,18 +407,6 @@ blockquote.game-review{
  text-align: center;
 }
 
-.add-coins-list-title{
-	display: inline;
-	font-size: 1.8em;
-	margin-right: 0.8em;
-	font-weight: bold;
-}
-.add-coins-button{
-	display: inline;
-	float: right;
-	vertical-align: ;
-}
-
 #list-coin{
   height: 65px;
 }
@@ -449,8 +420,7 @@ blockquote.game-review{
 }
 
 #min-val{
-  font-weight: normal;
-  font-size: 14px;
+  font-size: 13px;
   margin-top: -0.3em;
 }
 
@@ -495,13 +465,6 @@ blockquote.game-review{
   text-align: center;
 	width: 10em;
 }
-
-.panel-heading h3 {
-
- float: left;
-
-}
-
 
 .panel-heading a  {
 
