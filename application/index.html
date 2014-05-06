@@ -4,54 +4,55 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Welcome to Istim</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bem Vindo ao Istim</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <link rel="stylesheet" href="styles/start.css">
-  <link rel="stylesheet" href="styles/chat.css">
-  <link rel="stylesheet" href="styles/main.css">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="styles/start.css">
+	<link rel="stylesheet" href="styles/chat.css">
+	<link rel="stylesheet" href="styles/main.css">
 
-  <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
+	<!-- to refactor-->
+	<script src="bower_components/modernizr/modernizr.js"></script>
 <body>
-  
+
   <partial data-template="navbar_public"></partial>
   <partial data-template="sign_up_modal"></partial>
+  <partial data-template="chat"></partial>
+  <partial data-template="friend_list"></partial>
+
+	<!--Left Lateral Bar-->
+
+	<div class="container-fluid">
 
 
-  <!--Left Lateral Bar-->
+		<div class="row">
+			<div class="col-xs-3">
+				<partial data-template="sidebar"></partial>
+			</div>
 
-  <div class="container-fluid">
+			<div class="col-xs-9">
+					<div class="panel panel-default">
+						<div class="panel-footer">
+							© 2014 Istim Corporation. Todos os direitos reservados. Todas as marcas são propriedade dos seus respectivos donos no BRASIL.
+						</div>
+					</div>
+			</div>
 
+		</div><!-- .row -->
 
-    <div class="row">
-      <div class="col-xs-3">
-        <partial data-template="sidebar"></partial>
-      </div>
-
-      <div class="col-xs-9">
-          <div class="panel panel-default">
-            <div class="panel-footer">
-              © 2014 Istim Corporation. Todos os direitos reservados. Todas as marcas são propriedade dos seus respectivos donos no BRASIL.
-            </div>
-          </div>
-      </div>
-
-    </div><!-- .row -->
-
-  </div><!-- .container-fluid -->
+	</div><!-- .container-fluid -->
 
 
-  
 
-  <!-- End Sign Up Modal -->
+	<!-- End Sign Up Modal -->
 
-  <!-- dev tools -->
-  <script src="bower_components/intuos.js/intuos.js"></script>
+	<!-- dev tools -->
+	<script src="bower_components/intuos.js/intuos.js"></script>
 
   <!-- scripts -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -70,7 +71,7 @@
   <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
   <script src="scripts/start.js"></script>
   <script src="scripts/main.js"></script>
-
+  <script src="scripts/chat.js"></script>
 </body>
 
 </html>
