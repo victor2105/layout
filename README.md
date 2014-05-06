@@ -15,7 +15,7 @@
 * Na UFRN os computadores não tem o NodeJS instalado, então de preferência use um notebook ou uma máquina virtual.
 * Utilizando a rede da UFRN ao rodar o ```bower install``` ele tenta instalar algumas dependências utilizando a porta 22, que é bloqueado na UFRN. Existem duas soluções:
     * Baixar os [arquivos do bower](https://anonfiles.com/file/585c8570bf5db4a71ba828965a9ba9ea) e colocar a pasta *bower_components* dentro da pasta *application*
-    * Rodar o seguinte comando antes do bower install git config --global url."https://".insteadOf "git://"
+    * Rodar o seguinte comando antes do bower install ```git config --global url."https://".insteadOf "git://"```
 
 # ATENÇÃO
 
