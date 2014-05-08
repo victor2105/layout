@@ -10,10 +10,12 @@ signIn(); // Loga
 openListFriend();
 randomFriends();
 
+//Mostra o chat
 $(".friend-chat").click(function(){
     $("#box").show();
 });
 
+//Gera os amigos da lista de amigos
 function randomFriends(){    
     for(var i = 0; i < 5; i++){
         var id = i;
@@ -24,12 +26,14 @@ function randomFriends(){
     
 }
 
+//Abre a lista de amigos se o usuário estiver logado (loged = true)
 function openListFriend(){
     if(loged === true){
         $(".chat-friend-list").show();
     }
 }
 
+//contrala o envio das mensagens do chat
 function message()
 {
     document.getElementById("chatScreen").innerHTML += "<br>" +  document.getElementById("textarea").value;
@@ -37,17 +41,19 @@ function message()
     document.getElementById("chatScreen").scrollTop = document.getElementById("chatScreen").scrollHeight;
 }
 
+//Loga
 function signIn(){
     //Deve-se usar as APIs para executar esta função
     loged = true;
 }
 
+//Desloga
 function signOut(){
     //Deve-se usar as APIs para executar esta função
     loged = false;
 }
 
-
+//Controle do enter do chat
 function buttonEnterPressed(){
     if (event.keyCode == 13) {
         this.message();
