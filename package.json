@@ -12,5 +12,8 @@
     "gulp-serve": "0.2.0",
     "gulp-util": "^2.2.14",
     "gulp-watch": "0.5.4"
+  },
+  "dependencies": {
+    "gulp": "^3.6.2"
   }
 }
