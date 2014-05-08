@@ -227,6 +227,12 @@ img {
   max-width: 100%;
   height: auto; }
 
+.img-responsive-about {
+  max-width: 100%;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
 .img-rounded {
   border-radius: 6px; }
 
