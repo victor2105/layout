@@ -4,162 +4,167 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Adicionar Coins</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Istim - AddCoins</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="stylesheet" href="styles/start.css">
-	<link rel="stylesheet" href="styles/chat.css">
-	<link rel="stylesheet" href="styles/main.css">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="styles/start.css">
+  <link rel="stylesheet" href="styles/chat.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-	<partial data-template="navbar_authenticated"></partial>
-	<partial data-template="friend_list_chat"></partial>
-	<div class="col-xs-3">
-		<partial data-template="sidebar"></partial>
-	</div>
+  <partial data-template="navbar_authenticated"></partial>
+  <partial data-template="friend_list_chat"></partial>
+  <div class="col-sm-3">
+    <partial data-template="sidebar"></partial>
+  </div>
 
-	<div class="col-xs-5">
-		<div class="title-add-coins">
-			<h1>Adicionar Coins à sua Conta Istim</h1>
-			<p class = "opa">Fundos na sua Carteira Istim podem ser usados na compra de qualquer jogo no Istim ou em transações com outros jogadores.</p>
-		</div>
-
-		<div class="list-group">
-			<a href="#" class="list-group-item" id="list-coin">
-				<h2 class="list-group-item-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 1.000</span> <span class="color-green">(R$ 10,00)</span>
-
-					<div class="pull-right col-xs-4.5">
-						<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-							ADICIONAR COINS
-						</button>
-					</div>
-				</h2>
-
-				<p class="list-group-item-text" id="min-val">Valor mínimo de coins</p>
-			</a>
-
-			<a href="#" class="list-group-item" id="list-coin">
-				<h2 class="list-group-item-heading" id="val-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 2.000</span> <span class="color-green">(R$ 20,00)</span>
-					<div class="pull-right col-xs-4.5">
-						<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-							ADICIONAR COINS
-						</button>
-					</div>
-				</h2>
-			</a>
-
-			<a href="#" class="list-group-item" id="list-coin">
-				<h2 class="list-group-item-heading" id="val-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 5.000</span> <span class="color-green">(R$ 50,00)</span>
-					<div class="pull-right col-xs-4.5">
-						<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-							ADICIONAR COINS
-						</button>
-					</div>
-				</h2>
-			</a>
-			<a href="#" class="list-group-item" id="list-coin">
-				<h2 class="list-group-item-heading" id="val-heading">Adicionar R$ <span class="color-yellow"><i class="fa fa-bitcoin"></i> 10.000</span> <span class="color-green">(R$ 100,00)</span>
-					<div class="pull-right col-xs-4.5">
-						<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-							ADICIONAR COINS
-						</button>
-					</div>
-				</h2>
-			</h2>
-		</a>
-		<a href="#" class="list-group-item" id="list-coin">
-			<h2 class="list-group-item-heading" id="val-heading">Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 15.000</span> <span class="color-green">(R$ 150,00)</span>
-				<div class="pull-right col-xs-4.5">
-					<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-						ADICIONAR COINS
-					</button>
-				</div>
-			</h2>
-		</h2>
-	</a>
-</div>
+  <div class="col-sm-5">
+    <div class="title-add-coins">
+      <h1>Adicionar Coins à sua Conta Istim</h1>
+      <p class = "opa">Fundos na sua Carteira Istim podem ser usados na compra de qualquer jogo no Istim ou em transações com outros jogadores.</p>
+    </div>
+      <div class="panel panel-default coins-panel">
+        <div class="panel-body">
+            <div class="add-coins-list-title">
+              Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 1.000</span> <span class="color-green">(R$ 10,00)</span>
+                  <div class="add-coins-button">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                      ADICIONAR
+                    </button>
+                  </div>  
+            </div>
+              <p></p>
+              <p class="list-group-item-text" id="min-val">Valor mínimo de coins</p>
+        </div>
+      </div>
+      <div class="panel panel-default coins-panel">
+        <div class="panel-body">
+            <div class="add-coins-list-title">
+              Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 2.000</span> <span class="color-green">(R$ 20,00)</span>
+                  <div class="add-coins-button">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                      ADICIONAR
+                    </button>
+                  </div>
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-default coins-panel">
+        <div class="panel-body">
+            <div class="add-coins-list-title">
+              Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 5.000</span> <span class="color-green">(R$ 50,00)</span>
+                  <div class="add-coins-button">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                      ADICIONAR
+                    </button>
+                  </div>  
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-default coins-panel">
+        <div class="panel-body">
+            <div class="add-coins-list-title">
+              Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 10.000</span> <span class="color-green">(R$ 100,00)</span>
+                  <div class="add-coins-button">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                      ADICIONAR
+                    </button>
+                  </div>  
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-default coins-panel">
+        <div class="panel-body">
+            <div class="add-coins-list-title">
+              Adicionar <span class="color-yellow"><i class="fa fa-bitcoin"></i> 20.000</span> <span class="color-green">(R$ 200,00)</span>
+                  <div class="add-coins-button">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                      ADICIONAR
+                    </button>
+                  </div>  
+            </div>
+        </div>
 </div>
 
 <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-			<center>
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h1 class="modal-title" id="myModalLabel">Adicionar Coin</h1>
-				</div>
-			</center>
-			<div class="modal-body">
-				<form class="form-horizontal" id="form-payment">
-					<fieldset>
-						<legend>Forma de Pagamento</legend>
-						<div class="form-group">
-							<label for="select" class="col-lg-2 control-label">Forma de Pagamento:</label>
-							<div class="col-lg-3">
-								<select class="form-control" id="select">
-									<option>Cartão</option>
-									<option>Boleto</option>
-								</select>
-							</div>
-							<label for="numero" class="col-lg-3 control-label">Número do Cartão:</label>
-							<div class="col-lg-3">
-								<input type="text" class="form-control" id="inputCardNumber" placeholder="">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="select" class="col-lg-2 control-label">Data de Validade:</label>
-							<div class="col-lg-3">
-								<input type="date" class="form-control">
-							</div>
-							<label for="numero" class="col-lg-3 control-label">Código de Segurança:</label>
-							<div class="col-lg-2">
-								<input type="tel" class="form-control">
-							</div>
-						</div>
-						<legend>Informações de Cobrança</legend>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <center>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h1 class="modal-title" id="myModalLabel">Adicionar Coin</h1>
+        </div>
+      </center>
+      <div class="modal-body">
+        <form class="form-horizontal" id="form-payment">
+          <fieldset>
+            <legend>Forma de Pagamento</legend>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Forma de Pagamento:</label>
+              <div class="col-lg-3">
+                <select class="form-control" id="select">
+                  <option>Cartão</option>
+                  <option>Boleto</option>
+                </select>
+              </div>
+              <label for="numero" class="col-lg-3 control-label">Número do Cartão:</label>
+              <div class="col-lg-3">
+                <input type="text" class="form-control" id="inputCardNumber" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Data de Validade:</label>
+              <div class="col-lg-3">
+                <input type="date" class="form-control">
+              </div>
+              <label for="numero" class="col-lg-3 control-label">Código de Segurança:</label>
+              <div class="col-lg-3">
+                <input type="tel" class="form-control">
+              </div>
+            </div>
+            <legend>Informações de Cobrança</legend>
 
-						<div class="form-group">
-							<label class="col-lg-2 control-label">Nome do Solicitante:</label>
-							<div class="col-lg-3">
-								<input type="text" class="form-control">
-							</div>
-							<label for="numero" class="col-lg-3 control-label">Telefone:</label>
-							<div class="col-lg-3">
-								<input type="tel" class="form-control">
-							</div>
-						</div>
+            <div class="form-group">
+              <label class="col-lg-2 control-label">Nome do Solicitante:</label>
+              <div class="col-lg-3">
+                <input type="text" class="form-control">
+              </div>
+              <label for="numero" class="col-lg-3 control-label">Telefone:</label>
+              <div class="col-lg-3">
+                <input type="tel" class="form-control">
+              </div>
+            </div>
 
-						<div class="form-group">
-							<label class="col-lg-2 control-label">País:</label>
-							<div class="col-lg-3">
-								<select class="form-control" id="select">
-									<option>Brasil</option>
-									<option>Outro</option>
-								</select>
-							</div>
-							<label for="numero" class="col-lg-3 control-label">Cidade:</label>
-							<div class="col-lg-3">
-								<input type="text" class="form-control" placeholder="">
-							</div>
-						</div>
-						<br>
-						<div class="form-group">
-							<div class="col-lg-10 col-lg-offset-9">
-								<button class="btn btn-default">Cancelar</button>
-								<button type="submit" class="btn btn-success">Enviar</button>
-							</div>
-						</div>
-					</fieldset>
-				</form>
-			</div>
-		</div>
-	</div>
+            <div class="form-group">
+              <label class="col-lg-2 control-label">País:</label>
+              <div class="col-lg-3">
+                <select class="form-control" id="select">
+                  <option>Brasil</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <label for="numero" class="col-lg-3 control-label">Cidade:</label>
+              <div class="col-lg-3">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-8">
+                <button class="btn btn-default">Cancelar</button>
+                <button type="submit" class="btn btn-success">Enviar</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
-
 
 <!-- dev tools -->
 <script src="bower_components/intuos.js/intuos.js"></script>
@@ -181,4 +186,4 @@
 <script src="scripts/start.js"></script>
 <script src="scripts/main.js"></script>
 </body>
-</html>
+</html>	
