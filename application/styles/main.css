@@ -496,19 +496,18 @@ blockquote.game-review{
 	width: 10em;
 }
 
-.panel-heading h3 {
-
- float: left;
-
-}
-
-
 .panel-heading a  {
 
 	padding-left: 50px;
 
 }
 
+.img-responsive-about {
+ max-width: 100%;
+ border: 1px solid #000000
+;
+ border-radius: 5px;
+}
 
 
 
