@@ -5915,8 +5915,3 @@ legend {
 
 .fa-plus-square-o:before {
   content: "\f196"; }
-
-.img-responsive-about {
-  max-width: 100%;
-  border: 1px solid #000000;
-  border-radius: 5px; }

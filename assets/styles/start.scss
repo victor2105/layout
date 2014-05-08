@@ -11,10 +11,3 @@ $fa-font-path: "../bower_components/font-awesome/fonts/" !default;
 @import "application/bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/bootstrap";
 @import "application/bower_components/bootswatch-scss/slate/bootswatch";
 @import "application/bower_components/font-awesome/scss/font-awesome";
-
-.img-responsive-about {
- max-width: 100%;
- border: 1px solid #000000
-;
- border-radius: 5px;
-}
