@@ -496,10 +496,15 @@ blockquote.game-review{
 	width: 10em;
 }
 
-.panel-heading a  {
+.panel-heading h3  {
+    float: left;
+	
 
-	padding-left: 50px;
+}
 
+.panel-heading a {
+    
+ padding-left: 50px;    
 }
 
 
