@@ -1,8 +1,8 @@
-<li class="dropdown friend-list chat-friend-list">
+<li class="dropdown friend-list">
   <a href="#" class="btn btn-success dropdown-toggle friend-list-button" data-toggle="dropdown">Amigos</a>
   <ul class="dropdown-menu friend-list-dropdown">
     <li>
-      <div class="list-group friend-list-group">
+      <div class="list-group">
         <a href="#" class="list-group-item">
           <div class="row">
             <div class="col-xs-4">
@@ -17,18 +17,37 @@
           </div>
 
         </a>
-        <!-- Lista estática
-        <a href="#" class="list-group-item friend-chat">
+        <a id="x" href="#" class="list-group-item">
           Mario da burrinha <span class="fa icon fa-user pull-right color-green"></span>
         </a>
-        <a href="#" class="list-group-item friend-chat">
+        <a href="#" class="list-group-item">
           Victor Henrique <span class="fa icon fa-user pull-right"></span>
         </a>
-        <a href="#" class="list-group-item friend-chat">
+        <a href="#" class="list-group-item">
           ninguem <span class="fa icon fa-user pull-right"></span>
-        </a> -->
-          
+        </a>
       </div>
     </li>
   </ul>
 </li>
+
+<div id="box" class="chat-box">
+  <input type="checkbox" />
+  <label data-expanded="Close Chatbox" data-collapsed="Open Chatbox"></label>
+  <div class="chat-box-content">
+
+    <div id="chatScreen" class="well well-lg chat-screen" >
+
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">Input addons</label>
+      <div class="input-group" style="width: 100%;">
+        <input onkeydown="buttonEnterPressed()" id="textarea" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
