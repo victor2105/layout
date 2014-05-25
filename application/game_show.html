@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/chat.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body ng-app="istim">
 
     <div class="container">
         <div class="jumbotron">
@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="media-body">
-                    <h2 class="media-heading game-heading">Joguim dos Leleks 2 - Lesk's Revenge</h2>
+                    <h2 class="media-heading game-heading">{{game.name}}</h2>
                 </div>
 
                 <div class="game-block">
@@ -78,7 +78,7 @@
 
                     <div class="rightcol pull-left">
                         <img src="http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-aahhhhhh-lelek-lek-lek-lek-lek-lek.png" alt="" class="game-image"/>
-                        <p class="game-description">Chegou a hora! Vamos zoar como se não houvesse amanha com os mais loucos leleks da favela! Prepare-se para a hueragem sem limites desses leks mais descolados que os aparelhos coloridos em seus dentes! </p>
+                        <p class="game-description">{{game.description}}</p>
                         <p class="game-release"></p>
                     </div>
                 </div>
@@ -148,6 +148,7 @@
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
         <script src="scripts/start.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/chat.js"></script>

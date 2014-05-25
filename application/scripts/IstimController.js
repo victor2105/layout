@@ -16,7 +16,7 @@ istim.config( function ( $routeProvider ) { // configurando as rotas do módulo 
     })
   .when( '/game_show/:id', { 
         templateUrl: 'game_show.html',
-        controller: 'GamesController'
+        controller: 'GameShowController'
     })
   .when( '/about', { 
         templateUrl: 'about.html'//,
