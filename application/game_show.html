@@ -98,7 +98,8 @@
                         </div>
                     </div>
 
-                    <blockquote class="game-review">
+                    <!-- esses blockquotes serão ng-repeat num vetor de reviews. Integrar com api de review. -->
+                    <blockquote class="game-review"> 
                         <p>Este jogo vai mostrar a realidade da zoeira que poucos conhecem! Lelekagem do ano, com certeza!.</p>
                         <small>Leskinho da <cite title="Source Title">roça</cite></small>
                     </blockquote>
@@ -107,6 +108,7 @@
                         <p>Uma zoeira pra ficar na história. Você não pode perder!</p>
                         <small>Mano <cite title="Source Title">solto</cite></small>
                     </blockquote>
+                    <!-- Fim do bloco de ng-repeat -->
 
                 </div>
 
@@ -116,12 +118,7 @@
                             <h3 class="panel-title">Requerimentos do sistema</h3>
                         </div>
                         <div class="panel-body game-requirements">
-                            <p>Pc BrasilTech Morro Edition.</p>
-                            <p>Half-core 16mhz</p>
-                            <p>512kb RAM</p>
-                            <p>Floppy Drive</p>
-                            <p>Modem Connection</p>
-                            <p>Mouse</p>
+                            <p>{{game.systemRequirements}}</p>
                         </div>
                     </div>
                 </div>
