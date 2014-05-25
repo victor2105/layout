@@ -18,7 +18,7 @@
 </head>
 <!-- to refactor-->
 <script src="bower_components/modernizr/modernizr.js"></script>
-<body>
+<body ng-app="istim" ng-controller="IstimController">
 
     <partial data-template="navbar_public"></partial>
     <partial data-template="sign_up_modal"></partial>
@@ -26,8 +26,7 @@
     <partial data-template="friend_list"></partial>
 
     <!--Left Lateral Bar-->
-
-    <div class="cotainer-angular">
+    <div class="cotainer-angular" ng-view>
         <!-- Aqui é onde serão injetados os html das otras páginas -->
     </div>
 <!--     <div class="container-fluid">
@@ -63,6 +62,9 @@
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
     <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="scripts/IstimController.js"></script>
     <script src="scripts/start.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/chat.js"></script>
