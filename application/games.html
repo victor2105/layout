@@ -19,12 +19,12 @@
 
   <div class="list-group game-list col-md-6 col-md-offset-3">
 
-    <div class="panel panel-default games-panel" ng-repeat="game in games">
+    <div class="panel panel-default games-panel" ng-repeat="game in game_list">
       <div class="panel-body" >
         <img src="http://imgs-srzd.s3.amazonaws.com/srzd/upload/l/e/leleks.jpg" alt="" class="game-icon"/>
 
         <div class = "game-list-title">
-          <a href="#/game_show/1">{{game.title}}</a>
+          <a href="#/game_show/1">{{game.name}}</a>
         </div>
         <div class = "game-list-stars pull-right">
           <span class="fa fa-star "></span>
@@ -35,7 +35,7 @@
         </div>
 
         <p>
-          {{game.subtitle}}
+          {{game.description}}
         </p>
 
         <p class="list-group-item-text">
