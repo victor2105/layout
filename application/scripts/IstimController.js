@@ -1,6 +1,10 @@
-var istim = angular.module( "istim", ['ngRoute'] );
+var istim = angular.module( "istim", ['ngRoute'] ); //definindo istim como um módulo do angular
 
-istim.config( function ( $routeProvider ) {
+istim.controller("IstimController", ['$scope' , function($scope){ //adicionando o controller do módulo istim
+    $scope.frase = "ISTIM";
+}]);
+
+istim.config( function ( $routeProvider ) { // configurando as rotas do módulo istim
   $routeProvider
   .when( '/', { 
         //templateUrl: 'index.html',
@@ -45,6 +49,3 @@ istim.config( function ( $routeProvider ) {
   .otherwise( { redirectTo: '/' } );
 });
 
-istim.controller("IstimController", ['$scope' , function($scope){
-    $scope.frase = "ISTIM";
-}]);
