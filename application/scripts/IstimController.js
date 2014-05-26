@@ -46,6 +46,10 @@ istim.config( function ( $routeProvider ) { // configurando as rotas do módulo 
         templateUrl: 'statistics.html'//,
         //controller: 'GamesController'
     })
+  .when( '/login', {
+        templateUrl: 'sign_in.html',
+        controller: 'LoginController'
+    })
   .otherwise( { redirectTo: '/' } );
 });
 
