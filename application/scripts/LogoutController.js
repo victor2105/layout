@@ -1,6 +1,4 @@
 angular.module("istim").controller("LogoutController", ['$scope', '$http', '$location', function(scope, http, location){
-	console.log("entrou na logout");
-	alert("ISSO");
 	http.post(scope.urlApiUser + 'auth/logout')
 	.success(function(response) {
 		alert(response);

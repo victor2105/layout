@@ -32,8 +32,8 @@ istim.config( function ( $routeProvider ) { // configurando as rotas do módulo 
         //controller: 'GamesController'
     })
   .when( '/dashboard', { 
-        templateUrl: 'dashboard.html'//,
-        //controller: 'IstimController'
+        templateUrl: 'dashboard.html',
+        controller: 'DashboardController'
     })
   .when( '/developers', { 
         templateUrl: 'developers.html'//,

@@ -4,6 +4,7 @@ angular.module("istim").controller("LoginController", ['$scope', '$http', '$loca
 		var data = {'name' : user.name, 'email' : user.email, 'password' : user.password};
 		http.post(scope.urlApiUser + 'auth/login', data)
 		.success(function(response) {
+			scope.session.authenticated = true;
 			scope.session.sessionUser = response;
 			console.log(scope.session.sessionUser);
 			location.path('/dashboard');
