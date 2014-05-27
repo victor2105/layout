@@ -15,11 +15,7 @@
     <link rel="stylesheet" href="styles/chat.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-    <partial data-template="navbar_authenticated"></partial>
-    <partial data-template="chat"></partial>
-    <partial data-template="friend_list"></partial>
-
+<body ng-app="istim">
 
     <div class="container">
         <div class="jumbotron">
@@ -38,7 +34,7 @@
                 </div>
 
                 <div class="media-body">
-                    <h2 class="media-heading game-heading">Joguim dos Leleks 2 - Lesk's Revenge</h2>
+                    <h2 class="media-heading game-heading">{{game.name}}</h2>
                 </div>
 
                 <div class="game-block">
@@ -82,7 +78,7 @@
 
                     <div class="rightcol pull-left">
                         <img src="http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-aahhhhhh-lelek-lek-lek-lek-lek-lek.png" alt="" class="game-image"/>
-                        <p class="game-description">Chegou a hora! Vamos zoar como se não houvesse amanha com os mais loucos leleks da favela! Prepare-se para a hueragem sem limites desses leks mais descolados que os aparelhos coloridos em seus dentes! </p>
+                        <p class="game-description">{{game.description}}</p>
                         <p class="game-release"></p>
                     </div>
                 </div>
@@ -91,7 +87,7 @@
                 <div class="left-block pull-left">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Comprar Joguim dos Leleks 2 - Lesk's Revenge</h3>
+                            <h3 class="panel-title">Comprar {{game.name}}</h3>
 
 
 
@@ -102,7 +98,8 @@
                         </div>
                     </div>
 
-                    <blockquote class="game-review">
+                    <!-- esses blockquotes serão ng-repeat num vetor de reviews. Integrar com api de review. -->
+                    <blockquote class="game-review"> 
                         <p>Este jogo vai mostrar a realidade da zoeira que poucos conhecem! Lelekagem do ano, com certeza!.</p>
                         <small>Leskinho da <cite title="Source Title">roça</cite></small>
                     </blockquote>
@@ -111,6 +108,7 @@
                         <p>Uma zoeira pra ficar na história. Você não pode perder!</p>
                         <small>Mano <cite title="Source Title">solto</cite></small>
                     </blockquote>
+                    <!-- Fim do bloco de ng-repeat -->
 
                 </div>
 
@@ -120,12 +118,7 @@
                             <h3 class="panel-title">Requerimentos do sistema</h3>
                         </div>
                         <div class="panel-body game-requirements">
-                            <p>Pc BrasilTech Morro Edition.</p>
-                            <p>Half-core 16mhz</p>
-                            <p>512kb RAM</p>
-                            <p>Floppy Drive</p>
-                            <p>Modem Connection</p>
-                            <p>Mouse</p>
+                            <p>{{game.systemRequirements}}</p>
                         </div>
                     </div>
                 </div>
@@ -152,6 +145,7 @@
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
         <script src="scripts/start.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/chat.js"></script>

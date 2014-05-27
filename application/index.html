@@ -18,7 +18,7 @@
 </head>
 <!-- to refactor-->
 <script src="bower_components/modernizr/modernizr.js"></script>
-<body>
+<body ng-app="istim" ng-controller="IstimController">
 
     <partial data-template="navbar_public"></partial>
     <partial data-template="sign_up_modal"></partial>
@@ -26,20 +26,19 @@
     <partial data-template="friend_list"></partial>
 
     <!--Left Lateral Bar-->
-
-    <div class="container-fluid">
-
-
-        <div class="row">
-            <div class="col-xs-3">
-                <partial data-template="sidebar"></partial>
-            </div>
+    <div class="cotainer-angular" ng-view>
+        <!-- Aqui é onde serão injetados os html das otras páginas -->
+    </div>
+<!--     <div class="container-fluid">
 
 
+        <div class="row"> -->
+            <!--  -->
 
-        </div><!-- .row -->
 
-    </div><!-- .container-fluid -->
+       <!--  </div> --><!-- .row -->
+
+    <!-- </div> --><!-- .container-fluid -->
 
 
 
@@ -63,9 +62,20 @@
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
     <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="scripts/start.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/chat.js"></script>
-</body>
 
+    <!-- carregar os controllers do angular aqui -->
+    <script src="scripts/IstimController.js"></script>
+    <script src="scripts/GamesController.js"></script>
+    <script src="scripts/GameShowController.js"></script>
+    <script src="scripts/LoginController.js"></script>
+    <script src="scripts/SignupController.js"></script>
+    <script src="scripts/LogoutController.js"></script>
+    <script src="scripts/ProfileController.js"></script>
+
+</body>
 </html>

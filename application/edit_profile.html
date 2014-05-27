@@ -15,11 +15,7 @@
 	<link rel="stylesheet" href="styles/chat.css">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-	<partial data-template="navbar_authenticated"></partial>
-	<partial data-template="chat"></partial>
-    <partial data-template="friend_list"></partial>
-		
+<body ng-app="istim">
 	<br>
 	<hr>
 	<br>
@@ -61,7 +57,7 @@
 					<div class="form-group">
 						<label for="email" class="col-lg-2 control-label">Email:</label>
 						<div class="col-lg-10">
-							<input class="form-control" type="email" for="email" value="jogador@mail.com">
+							<input class="form-control" type="email" for="email" value="{{session.sessionUser.email}}">
 						</div>
 					</div>
 				</fieldset>
