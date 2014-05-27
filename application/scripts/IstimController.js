@@ -1,7 +1,12 @@
 var istim = angular.module( "istim", ['ngRoute'] ); //definindo istim como um módulo do angular
 
-istim.controller("IstimController", ['$scope' , function($scope){ //adicionando o controller do módulo istim
+istim.controller("IstimController", ['$scope', '$location' , function($scope, $location){ //adicionando o controller do módulo istim
     $scope.frase = "ISTIM";
+    $scope.session = {};
+    $scope.session.sessionUser = null;
+    $scope.all_users = [];
+
+    $scope.urlApiUser = "http://istimuser.nodejitsu.com/";
 }]);
 
 istim.config( function ( $routeProvider ) { // configurando as rotas do módulo istim
@@ -49,6 +54,18 @@ istim.config( function ( $routeProvider ) { // configurando as rotas do módulo 
   .when( '/login', {
         templateUrl: 'sign_in.html',
         controller: 'LoginController'
+    })
+  .when( '/logout', {
+        templateUrl: 'sign_in.html',
+        controller: 'LogoutController'
+    })
+  .when( '/signup', {
+        templateUrl: 'sign_up.html',
+        controller: 'SignupController'
+    })
+  .when( '/profile', {
+        templateUrl: 'edit_profile.html',
+        controller: 'ProfileController'
     })
   .otherwise( { redirectTo: '/' } );
 });
