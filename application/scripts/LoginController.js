@@ -1,12 +1,12 @@
-angular.module("istim").controller("LoginController", ['$scope', '$http', '$location', function(scope, http, location){
-
+angular.module("istim").controller("LoginController", ['$scope', '$http', '$location', '$cookies', function(scope, http, location, cookies){
 	scope.auth = function (user) {
 		var data = {'name' : user.name, 'email' : user.email, 'password' : user.password};
-		http.post(scope.urlApiUser + 'auth/login', data)
-		.success(function(response) {
+		http.post(scope.urlApiUser + 'auth/login', data, {
+              withCredentials: true
+           })
+		.success(function(data, status, headers, config) {
 			scope.session.authenticated = true;
-			scope.session.sessionUser = response;
-			console.log(scope.session.sessionUser);
+			scope.session.sessionUser = data;
 			location.path('/dashboard');
 		})
 		.error(function(response) {

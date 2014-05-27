@@ -1,11 +1,11 @@
-var istim = angular.module( "istim", ['ngRoute'] ); //definindo istim como um módulo do angular
+var istim = angular.module( "istim", ['ngRoute', 'ngCookies'] ); //definindo istim como um módulo do angular
 
-istim.controller("IstimController", ['$scope', '$location' , function($scope, $location){ //adicionando o controller do módulo istim
+istim.controller("IstimController", ['$scope', '$location', '$cookies' , function($scope, $location, $cookies){ //adicionando o controller do módulo istim
     $scope.frase = "ISTIM";
     $scope.session = {};
     $scope.session.sessionUser = null;
     $scope.all_users = [];
-
+    
     $scope.urlApiUser = "http://istimuser.nodejitsu.com/";
 }]);
 
