@@ -18,7 +18,7 @@ istim.controller("IstimController", ['$scope', '$location', '$http', '$cookies' 
 				console.log(response);
 			})
 			.error(function(response) {
-				console.log("ERROR::: " + response);
+				console.log("Not logged!");
 			});
 
 			var data = {'name' : user.name, 'email' : user.email, 'password' : user.password};
@@ -31,7 +31,8 @@ istim.controller("IstimController", ['$scope', '$location', '$http', '$cookies' 
 				$location.path('/profile');
 			})
 			.error(function(response) {
-				console.log("ERROR::: " + response);
+				console.log("> Erro!")
+				console.log(response);
 			});
 		};
 

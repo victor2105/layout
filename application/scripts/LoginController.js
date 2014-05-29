@@ -11,7 +11,7 @@ angular.module("istim").controller("LoginController", ['$scope', '$http', '$loca
 			console.log(response);
 		})
 		.error(function(response) {
-			console.log("ERROR::: " + response);
+			console.log("Not logged!");
 		});
 
 		var data = {'name' : user.name, 'email' : user.email, 'password' : user.password};

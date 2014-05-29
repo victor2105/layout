@@ -1,12 +1,12 @@
-angular.module("istim").controller("ProfileController", ['$scope', '$http', '$location', function($scope, $http, $location){
+angular.module("istim").controller("ProfileController", ['$scope', '$http', '$location', '$cookies', function($scope, $http, $location, $cookies){
 	$scope.edit_profile = function (user) {
-		var data = {'name' : user.name, 'email' : user.email, 'password' : user.password};
-		$http.put($scope.urlApiUser + 'user/', data, {
-              withCredentials: true
-           })
+
+		var data = { 'id' : $scope.session.sessionUser.id, 'name' : user.name, 'email' : user.email, 'password' : user.password };
+		var config = { withCredentials: true, xsrfCookieName: $cookies, xsrfHeaderName: $cookies };
+
+		$http.put($scope.urlApiUser + 'user/', data, config)
 		.success(function(response) {
 			$scope.session.sessionUser = response;
-			console.log($scope.sessionUser);
 			$location.path('/dashboard');
 		})
 		.error(function(response) {
