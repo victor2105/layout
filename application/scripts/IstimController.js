@@ -1,6 +1,6 @@
 var istim = angular.module( "istim", ['ngRoute', 'ngCookies'] ); //definindo istim como um módulo do angular
 
-istim.controller("IstimController", ['$scope', '$location', '$cookies' , function($scope, $location, $cookies){ //adicionando o controller do módulo istim
+istim.controller("IstimController", ['$scope', '$location', '$http', '$cookies' , function($scope, $location, $http, $cookies){ //adicionando o controller do módulo istim
     $scope.frase = "ISTIM";
     $scope.session = {};
     $scope.session.sessionUser = null;
@@ -9,19 +9,46 @@ istim.controller("IstimController", ['$scope', '$location', '$cookies' , functio
     $scope.urlApiUser = "http://istimuser.nodejitsu.com/";
 
 		$scope.auth = function (user) {
+				$http.post($scope.urlApiUser + 'auth/logout', {}, {
+		      withCredentials: true
+		   })
+			.success(function(response) {
+				$scope.session.authenticated = false;
+				$scope.session.sessionUser = null;
+				console.log(response);
+			})
+			.error(function(response) {
+				console.log("ERROR::: " + response);
+			});
+
 			var data = {'name' : user.name, 'email' : user.email, 'password' : user.password};
-			http.post(scope.urlApiUser + 'auth/login', data, {
-	              withCredentials: true
-	           })
+			$http.post($scope.urlApiUser + 'auth/login', data, {
+	        withCredentials: true
+	     })
 			.success(function(data, status, headers, config) {
-				scope.session.authenticated = true;
-				scope.session.sessionUser = data;
-				location.path('/dashboard');
+				$scope.session.authenticated = true;
+				$scope.session.sessionUser = data;
+				$location.path('/dashboard');
 			})
 			.error(function(response) {
 				console.log("ERROR::: " + response);
 			});
 		};
+
+		$scope.logout = function () {
+			$http.post($scope.urlApiUser + 'auth/logout', {}, {
+		      withCredentials: true
+		   })
+			.success(function(response) {
+				$scope.session.authenticated = false;
+				$scope.session.sessionUser = null;
+				location.path('/');
+
+			})
+			.error(function(response) {
+				console.log("ERROR::: " + response);
+			});
+		}
 }]);
 
 

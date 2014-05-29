@@ -36,7 +36,7 @@
         <!--  <li><a href="perfil.html">Perfil</a></li> -->
        <!-- </ul>
        </li> -->
-      <li><a href="#/logout"><span class="fa icon fa-sign-out"></span>Sair</a></li>
+      <li><a href="#/" ng-click="logout()"><span class="fa icon fa-sign-out"></span>Sair {{ scope.session.user.name }}</a></li>
     </ul>
   </div>
 </div>
