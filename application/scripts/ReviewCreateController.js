@@ -2,7 +2,7 @@ var reviewPage = angular.module('istim', []);
 
 var url_default = 'https://reviewapi-t.jit.su/review';
 
-function reviewCreateController($scope, $http) {
+function reviewCreateController($scope, $http, $routParams) {
 	$scope.formData = {};
     $scope.gameName = 'Mario';
 	$http.get(url_default+'/gamereviews?gameName='+$scope.gameName)

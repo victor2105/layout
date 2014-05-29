@@ -27,7 +27,7 @@ istim.config( function ( $routeProvider ) { // configurando as rotas do módulo 
         templateUrl: 'reviews.html',
         controller: 'reviewController'
     })  
-  .when( '/create_review', { 
+  .when( '/create_review/:id', { 
         templateUrl: 'create_review.html',
         controller: 'reviewCreateController'
     })
@@ -86,8 +86,7 @@ istim.config( function ( $routeProvider ) { // configurando as rotas do módulo 
     .when( '/perfil/:param1', { 
        templateUrl: 'perfil.html',
        controller: 'UsersCtrl'
-   })
-		
+   })		
   .otherwise( { redirectTo: '/' } );
 });
 
