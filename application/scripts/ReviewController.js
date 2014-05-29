@@ -1,14 +1,14 @@
-angular.module("istim").controller("ReviewController", ['$scope', '$http', function(scope, http){
+var reviewPage = angular.module('review-page', []);
 
-	scope.review_list = [];
-	scope.api_url = "https://reviewapi.jit.su/review";
+var url_default = 'https://reviewapi-t.jit.su/review';
 
-	http.get(scope.api_url+"/game")
+function reviewController($scope, $http) {
+	$scope.formData = {};
+	$http.get(url_default+'/media')
 		.success(function(data) {
-			scope.review_list = data;
-			console.log(data);
+			$scope.reviews = data;
 		})
 		.error(function(data) {
 			console.log('Error: ' + data);
 		});
-}]);
+}
