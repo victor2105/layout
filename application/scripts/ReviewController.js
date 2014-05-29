@@ -1,4 +1,4 @@
-var reviewPage = angular.module('review-page', []);
+var reviewPage = angular.module('istim', []);
 
 var url_default = 'https://reviewapi-t.jit.su/review';
 
