@@ -67,6 +67,10 @@ istim.config( function ( $routeProvider ) { // configurando as rotas do módulo 
         templateUrl: 'edit_profile.html',
         controller: 'ProfileController'
     })
+	.when( '/addcoin', {
+				templateUrl: 'add_coins.html',
+				controller: 'CoinController'
+		})
   .otherwise( { redirectTo: '/' } );
 });
 
