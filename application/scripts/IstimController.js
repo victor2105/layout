@@ -23,13 +23,17 @@ istim.config( function ( $routeProvider ) { // configurando as rotas do módulo 
         templateUrl: 'game_show.html',
         controller: 'GameShowController'
     })
-  .when( '/about', { 
-        templateUrl: 'about.html'//,
-        //controller: 'GamesController'
-    })
   .when( '/reviews', { 
         templateUrl: 'reviews.html',
         controller: 'reviewController'
+    })  
+  .when( '/create_review', { 
+        templateUrl: 'create_review.html',
+        controller: 'reviewCreateController'
+    })
+  .when( '/about', { 
+        templateUrl: 'about.html'//,
+        //controller: 'GamesController'
     })
   .when( '/contact_us', { 
         templateUrl: 'contact_us.html'//,

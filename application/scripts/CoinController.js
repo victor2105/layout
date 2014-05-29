@@ -17,6 +17,7 @@ angular.module("istim").controller("CoinController", ['$scope', '$http', functio
 				console.log('Error: ' + data);
 			});
 	};
+    
 	scope.creditCoin = function(cash) {
 		var url = url_default+'/credit?userId='+scope.formData.userId +'&cash='+scope.formData.cash;
 		http.post(url)
