@@ -67,6 +67,10 @@ istim.config( function ( $routeProvider ) { // configurando as rotas do módulo 
         templateUrl: 'edit_profile.html',
         controller: 'ProfileController'
     })
+    .when( '/perfil/:param1', { 
+       templateUrl: 'perfil.html',
+       controller: 'UsersCtrl'
+   })
   .otherwise( { redirectTo: '/' } );
 });
 
