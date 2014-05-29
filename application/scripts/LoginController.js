@@ -21,7 +21,7 @@ angular.module("istim").controller("LoginController", ['$scope', '$http', '$loca
 		.success(function(data, status, headers, config) {
 			$scope.session.authenticated = true;
 			$scope.session.sessionUser = data;
-			$location.path('/dashboard');
+			$location.path('/profile');
 		})
 		.error(function(response) {
 			console.log("ERROR::: " + response);

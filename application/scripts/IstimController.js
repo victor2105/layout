@@ -28,7 +28,7 @@ istim.controller("IstimController", ['$scope', '$location', '$http', '$cookies' 
 			.success(function(data, status, headers, config) {
 				$scope.session.authenticated = true;
 				$scope.session.sessionUser = data;
-				$location.path('/dashboard');
+				$location.path('/profile');
 			})
 			.error(function(response) {
 				console.log("ERROR::: " + response);
