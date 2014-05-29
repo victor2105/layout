@@ -5,49 +5,65 @@ istim.controller("IstimController", ['$scope', '$location', '$cookies' , functio
     $scope.session = {};
     $scope.session.sessionUser = null;
     $scope.all_users = [];
-    
+
     $scope.urlApiUser = "http://istimuser.nodejitsu.com/";
+
+		$scope.auth = function (user) {
+			var data = {'name' : user.name, 'email' : user.email, 'password' : user.password};
+			http.post(scope.urlApiUser + 'auth/login', data, {
+	              withCredentials: true
+	           })
+			.success(function(data, status, headers, config) {
+				scope.session.authenticated = true;
+				scope.session.sessionUser = data;
+				location.path('/dashboard');
+			})
+			.error(function(response) {
+				console.log("ERROR::: " + response);
+			});
+		};
 }]);
+
 
 istim.config( function ( $routeProvider ) { // configurando as rotas do módulo istim
   $routeProvider
-  .when( '/', { 
+  .when( '/', {
         //templateUrl: 'index.html',
         //controller: 'IstimController'
     })
-  .when( '/games', { 
+  .when( '/games', {
         templateUrl: 'games.html',
         controller: 'GamesController'
     })
-  .when( '/game_show/:id', { 
+  .when( '/game_show/:id', {
         templateUrl: 'game_show.html',
         controller: 'GameShowController'
     })
-  .when( '/about', { 
+  .when( '/about', {
         templateUrl: 'about.html'//,
         //controller: 'GamesController'
     })
-  .when( '/contact_us', { 
+  .when( '/contact_us', {
         templateUrl: 'contact_us.html'//,
         //controller: 'GamesController'
     })
-  .when( '/dashboard', { 
+  .when( '/dashboard', {
         templateUrl: 'dashboard.html',
         controller: 'DashboardController'
     })
-  .when( '/developers', { 
+  .when( '/developers', {
         templateUrl: 'developers.html'//,
         //controller: 'GamesController'
     })
-  .when( '/news', { 
+  .when( '/news', {
         templateUrl: 'news.html'//,
         //controller: 'GamesController'
     })
-  .when( '/ranking', { 
+  .when( '/ranking', {
         templateUrl: 'ranking.html'//,
         //controller: 'GamesController'
     })
-  .when( '/statistics', { 
+  .when( '/statistics', {
         templateUrl: 'statistics.html'//,
         //controller: 'GamesController'
     })
